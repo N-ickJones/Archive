@@ -1,0 +1,120 @@
+Report for Management
+
+Inserting 9 Customers into the Tree
+
+Starting FindIterative/FindRecursive Searches
+Musco           584-3622
+Musco           584-3622
+Penton          Not Found
+Penton          Not Found
+
+Traversing the Tree starting with Figueroa
+Abo-Shear      295-1882
+Figueroa       291-1864
+Khadka         294-8075
+McManus        295-1492
+Musco          584-3622
+Parker         293-6122
+Syed           291-7890
+Wimalasekara   295-1601
+
+Inserting 3 Customers into the Tree
+
+Traversing The Tree using Inorder Successor [Root]
+Musco          584-3622
+Parker         293-6122
+Skinner        294-1882
+Syed           291-7890
+Wimalasekara   295-1601
+Abo-Shear      295-1882
+Bolen          294-1568
+Figueroa       291-1864
+Khadka         294-8075
+Krischke       295-6622
+McManus        295-1492
+
+Traversing The Tree using Inorder Predeccesor [Root]
+Krischke       295-6622
+Khadka         294-8075
+Figueroa       291-1864
+Bolen          294-1568
+Abo-Shear      295-1882
+Wimalasekara   295-1601
+Syed           291-7890
+Skinner        294-1882
+Parker         293-6122
+Musco          584-3622
+McManus        295-1492
+
+Traversing the Tree using PreOrder Iterative
+McManus        295-1492
+Figueroa       291-1864
+Abo-Shear      295-1882
+Bolen          294-1568
+Khadka         294-8075
+Krischke       295-6622
+Wimalasekara   295-1601
+Parker         293-6122
+Musco          584-3622
+Syed           291-7890
+Skinner        294-1882
+
+Traversing The Tree using Inorder Successor
+Skinner        294-1882
+Sumdin         294-1666
+Syed           291-7890
+Wimalasekara   295-1601
+Abo-Shear      295-1882
+Bolen          294-1568
+Bolen          295-1882
+Khadka         294-8075
+Krischke       295-6622
+Musco          584-3622
+
+Traversing The Tree using Reverse Inorder
+Wimalasekara   295-1601
+Syed           291-7890
+Sumdin         294-1666
+Skinner        294-1882
+Musco          584-3622
+Krischke       295-6622
+Khadka         294-8075
+Bolen          295-1882
+Bolen          294-1568
+Abo-Shear      295-1882
+
+Traversing the Tree using PreOrder Iterative
+Musco          584-3622
+Khadka         294-8075
+Abo-Shear      295-1882
+Bolen          294-1568
+Bolen          295-1882
+Krischke       295-6622
+Wimalasekara   295-1601
+Skinner        294-1882
+Syed           291-7890
+Sumdin         294-1666
+
+Traversing the Tree using PostOrder Iterative
+Musco
+Bolen
+Bolen
+Abo-Shear
+Krischke
+Khadka
+Sumdin
+Syed
+Skinner
+Wimalasekara
+
+Traversing the Tree using PostOrder Recursive
+Musco   
+Bolen
+Bolen
+Abo-Shear
+Krischke
+Khadka
+Sumdin
+Syed
+Skinner
+Wimalasekara

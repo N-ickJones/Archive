@@ -1,0 +1,314 @@
+---Exam 2
+
+GUI (using tinker)
+
+import tkinter
+
+class MyGUI():
+
+    def __init__(self):
+        main_windows = tkinter.TK()
+        tkinter.mainloop()
+
+my_gui = MyGUI()
+
+
+
+
+Inheritance ETC
+
+class Person:
+    def __init__(self, first, last):
+        self.firstname = first
+        self.lastname = last
+
+    def Name(self):
+        return self.firstname + " " + self.lastname
+
+class Employee(Person):
+    def __init__(self, first, last, staffnum):
+        # super().__init__(self, first, last
+        Person.__init__(self, first, last)
+        self.staffnumber = staffnum
+
+    def GetEmployee(self):
+        return self.Name() + ", " +  self.staffnumber
+
+x = Person("Marge", "Simpson")
+y = Employee("Homer", "Simpson", "1007")
+
+print(x.Name())
+print(y.GetEmployee())
+
+
+
+    # Start Class
+
+    import "Module Name"
+    # Capaltize the class
+    class Car():
+
+
+
+    #private function
+    def __name():
+
+
+    a_list = list()
+
+    a_list.append('test')
+    print("Append", a_list)
+    a_list.remove('test')
+    print("Remove", a_list)
+    a_list.insert(0, 'test2')
+    print("Insert", a_list)
+    print("Length", len(a_list))
+
+    list_2 = []+a_list
+    print("Copy  ", list_2)
+
+    with open('test.txt', 'r+') as f:
+        print('read', f.read())
+
+    with open('test.txt', 'r+') as f:
+        print('readline', f.readline())
+
+    with open('test.txt', 'r+') as f:
+        print('readlines', f.readlines())
+
+    n = 4
+    m = 4
+    b_list = [[0] * m] * n
+    print(b_list)
+
+    # Advantages creates a fixed memory size
+    # Faster Processing
+    # Tuples are safe
+    # some operations in python require tuples
+    # use list if changes are going to be made
+    a_tuple = (1, 2, 3, 4)
+    print(a_tuple)
+    print(id(a_tuple))  # Changes ID when you multiply -- they are immutable
+    a_tuple = a_tuple * 6
+    print(a_tuple)
+    print(id(a_tuple))
+
+    c_list = list(a_tuple)
+    print(c_list)
+    b_tuple = tuple(c_list)
+    print(b_tuple)
+
+    b_tuple = b_tuple + (9,)
+    print(b_tuple)
+
+    # pip install matplotlib
+    # import matplotlib
+    # import matplotlib.pyplot as plt
+    # from matplotlib import pyplot as plt
+    #
+
+--Exam 1
+
+    """
+
+    # print(format(total, ',.2f')) Format to 2 decimal Places
+    # print(round(total, 2)) Round to 2 decimal Places
+    with open("test.txt", 'r+') as f:
+        f.write("test")
+        f.write("test2" + "\n")
+        f.write("test3" + "\n")
+
+    # t = turtle.turtlepen()
+
+    # t.forward(100)
+    # turtle.exitonclick()
+
+    value = 'undefined'
+    while value is 'undefined':
+        try:
+            value = get_int(input("What's your input? "))
+        except ValueError as error:
+            print(error)
+        else:
+            print(value)
+
+    value = 'undefined'
+    while value is 'undefined':
+        try:
+            value = get_int(input("What's your input? "))
+        except ValueError as error:
+            print(error)
+        except ImportError:
+            print('failure')
+        finally:
+            print('made it')
+
+    with open('test.txt', 'w') as w_file:
+        w_file.write("test")
+
+    with open('test.txt', 'a') as a_file:
+        a_file.write("test")
+
+    with open('test.txt', 'r') as r_file:
+        print(r_file.read())
+
+    with open('test.txt', 'r+') as rw_file:
+        rw_file.write('test')
+        print(rw_file.read())
+
+
+
+
+def get_int(value):
+    return int(value)
+"""
+# continue
+
+
+# lists
+# a_list = []
+# numbers = list(range(5))  # list 0-4
+# numbers2 = list(range(1, 10, 2))  # list 0-10 in increments of 2
+# Repetition operator [list * n]
+# Makes copies and concatenate together
+
+
+# numbers3 = [1, 2, 3, 4, 5, 6, 7, 8]
+# print(numbers3[3:5])
+# print(numbers3[-3:])
+# print(numbers3[:-4])
+
+# tuples
+# a_tuple = ()
+
+# print("test" + "1")
+# test1
+
+while - represented by a diamond
+
+while condition:
+    statements
+
+for variable in [val1, val2, etc]:
+    statements
+
+for i in target:
+    Notes 9/16/2018
+
+r+ - read and write at same time
+w - write
+a - appending
+rb - reader binary
+wb - write binary
+
+
+
+
+
+
+
+"""
+import turtle
+
+
+win = turtle.Screen()
+
+times = 5
+orig_dist = 40
+dist = orig_dist
+up = 90
+down = 270
+left = 180
+right = 360
+speed = 30
+
+turtle.speed(speed)
+
+
+for i in range(times):
+    turtle.setheading(right)
+    #turtle.color("white")
+    #turtle.fd(dist)
+
+    turtle.setheading(up)
+    turtle.color("black")
+    turtle.fd(dist)
+
+    turtle.setheading(left)
+    turtle.color("black")
+    turtle.fd(dist)
+
+    turtle.setheading(down)
+    #turtle.color("white")
+    #turtle.fd(dist)
+    turtle.setx(turtle.xcord)
+    turtle.sety(turtle.ycord)
+
+    dist += 5
+
+turtle.setheading(right)
+turtle.color("white")
+turtle.fd(dist)
+
+dist = orig_dist
+turtle.setx(0)
+turtle.sety(0)
+
+for i in range(times):
+    turtle.setheading(left)
+    turtle.color("white")
+    turtle.fd(dist)
+    turtle.setheading(up)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(right)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(down)
+    turtle.color("white")
+    turtle.fd(dist)
+    dist += 5
+
+dist = orig_dist
+turtle.setx(0)
+turtle.sety(0)
+
+for i in range(times):
+    turtle.setheading(right)
+    turtle.color("white")
+    turtle.fd(dist)
+    turtle.setheading(down)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(left)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(up)
+    turtle.color("white")
+    turtle.fd(dist)
+    dist += 5
+
+dist = orig_dist
+turtle.setx(0)
+turtle.sety(0)
+
+for i in range(times):
+    turtle.setheading(left)
+    turtle.color("white")
+    turtle.fd(dist)
+    turtle.setheading(down)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(right)
+    turtle.color("black")
+    turtle.fd(dist)
+    turtle.setheading(up)
+    turtle.color("white")
+    turtle.fd(dist)
+    dist += 5
+
+dist = orig_dist
+turtle.setx(0)
+turtle.sety(0)
+win.exitonclick()
+"""

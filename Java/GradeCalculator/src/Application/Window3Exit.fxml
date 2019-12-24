@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+                                                                                                                                                                     <!-- Enabled while Editing -->
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller3Exit">
+                                                                                                                                                     <!-- fx:controller="Application.Controller3" -->
+      <HBox layoutX="-1.0" layoutY="67.0">
+            <Button mnemonicParsing="false" onAction="#confirmSave" text="Save and Exit">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" fx:id="button" onAction="#confirmCancel" text="Cancel">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#confirmExit" text="Exit Without Saving" />
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="62.0" layoutY="22.0" text="Save Your Progress?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+</Pane>

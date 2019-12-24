@@ -1,0 +1,55 @@
+.vbox {
+    -fx-border-color: black ;
+    -fx-border-width: 0 2 0 0;
+}
+
+.table-view {
+    -fx-color: rgb(202, 152, 51) ;
+    -fx-font-weight: bold;
+    -fx-border-color: black ;
+    -fx-border-width:2;
+}
+
+.table-row-cell {
+    -fx-cell-size: 50px;
+}
+
+.row1, .row2, .row4, .row5, .row7, .row8, .row9 {
+    -fx-border-color: orange ;
+    -fx-border-width: 0 0 1 0;
+}
+
+.row3, .row6 {
+
+    -fx-border-color: black ;
+    -fx-border-width: 0 0 2 0;
+}
+
+.row9 {
+    -fx-border-color: black ;
+    -fx-border-width: 0 0 2 0;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9{
+    -fx-alignment: center;
+    -fx-text-fill: orange;
+    -fx-background-color: gray;
+}
+
+.column1 {
+    -fx-border-color: black ;
+    -fx-border-width: 0 0 0 2;
+}
+
+.column2 {
+    -fx-border-color: orange ;
+    -fx-border-width: 0 1 0 1;
+}
+
+.column3, .column6, .column9 {
+    -fx-border-color: black ;
+    -fx-border-width: 0 2 0 0;
+}
+
+
+

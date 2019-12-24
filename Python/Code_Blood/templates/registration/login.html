@@ -1,0 +1,31 @@
+{% load static %}
+{% block content %}
+
+<!--
+{#% if form.errors %#}
+<p>Your username and password didn't match. Please try again.</p>
+{#% endif %#}
+
+{#% if next %#}
+    {#% if user.is_authenticated %#}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {#% else %#}
+    <p>Please login to see this page.</p>
+    {#% endif %#}
+{#% endif %#}
+-->
+
+<form id="login-form" class="login-interface" method="post" action="{% url 'home' %}" >
+         {% csrf_token %}
+         <label class="login-interface" for="id_username">Username:</label>
+         <input class="login-interface" type="text" name="username" autofocus="" maxlength="254" required="" id="id_username">
+         <label class="login-interface" for="id_password">Password:</label>
+         <input class="login-interface" type="password" name="password" required="" id="id_password">
+         <div class="submit-button"><input style="background-color: lightgrey;" class="login-interface" type="submit" value="Login"></div>
+         <input type="hidden" name="next" value="{{ next }}">
+</form>
+
+{# Assumes you setup the password_reset view in your URLconf #}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'Base-Content/base.html' %}
+
+{% block content %}
+    <form class="centered-form" id="signup-form" method="post">
+        <h2 style="text-align: center;">Search Site</h2>
+        {% csrf_token %}
+        <label><input type="text" id="search_bar" name="search_bar"></label>
+        <div class="submit-button"><button type="submit">Search</button></div>
+    </form>
+{% endblock %}

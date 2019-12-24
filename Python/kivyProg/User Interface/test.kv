@@ -1,0 +1,62 @@
+<Row>:
+    #state1 : state1
+    orientation: "horizontal"
+    spacing: 0, 5
+
+    Button:
+        text: root.button_text
+        size_hint_x: .2
+
+    TextInput:
+        #text : root.id
+        size_hint_x: .8
+        id : root.id
+
+display:
+
+    BoxLayout:
+        orientation: "vertical"
+        padding : 20, 20
+
+        BoxLayout:
+            orientation: "horizontal"
+
+            Button:
+                size_hint_x: .2
+                text: "+Add More"
+                valign: 'bottom'
+                on_press: root.add_more()
+
+
+        BoxLayout:
+            orientation: "horizontal"
+
+            Label:
+                size_hint_x: .2
+                text: "SN"
+                valign: 'bottom'
+
+            Label:
+                size_hint_x: .8
+                text: "Value"
+                valign: 'bottom'
+
+
+        Rows:
+            id: rows
+
+        BoxLayout:
+            orientation: "horizontal"
+            padding : 10, 0
+            spacing: 10, 10
+            size_hint: .5, .7
+            pos_hint: {'x': .25, 'y':.25}
+
+            Button:
+                text: 'Ok'
+                on_release:
+                    root.insert_value()
+
+            Button:
+                text: 'Cancel'
+                on_release: root.dismiss()

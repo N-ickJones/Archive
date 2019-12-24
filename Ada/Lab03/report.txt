@@ -1,0 +1,47 @@
+Report for Management [C - Data]
+
+[Front To Rear]
+Item with 95
+Item with 57
+Item with 33
+Item with 85
+Item with 62
+
+[Rear To Front]
+Item with 62
+Item with 85
+Item with 33
+Item with 57
+Item with 95
+
+[Front To Rear]
+Item with 22
+Item with 85
+
+Report for Management [B/A - Data]
+
+Number of Items = 5
+
+[Front To Rear]
+Car with 3 doors and made by Chevy
+Car with 2 doors and made by Ford 
+Car with 4 doors and made by Ford 
+Car with 2 doors and made by GMC  
+Car with 2 doors and made by RAM  
+
+Number of Items = 4
+
+[Front To Rear]
+Car with 3 doors and made by Chevy
+Car with 4 doors and made by Ford 
+Car with 2 doors and made by GMC  
+Car with 2 doors and made by RAM  
+
+[Front To Rear]
+Plane with 4 doors, 4 engines, and made by Cessna
+Plane with 2 doors, 1 engines, and made by Piper 
+Plane with 3 doors, 6 engines, and made by Boeing
+Car with 3 doors and made by Chevy
+Car with 4 doors and made by Ford 
+Car with 2 doors and made by GMC  
+Car with 2 doors and made by RAM  

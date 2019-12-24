@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Parser.Controller">
+   <children>
+      <TextField fx:id="fileInputBox" alignment="TOP_LEFT" layoutX="34.0" layoutY="35.0" prefHeight="25.0" prefWidth="228.0" promptText="Enter File or Select Browse" />
+      <Label layoutX="669.0" layoutY="43.0" text="Table">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="browse" layoutX="262.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Browse" />
+      <LineChart fx:id="lineChart" layoutX="26.0" layoutY="354.0" legendSide="LEFT" prefHeight="400.0" prefWidth="968.0" visible="false">
+        <xAxis>
+          <CategoryAxis animated="false" label="String Search" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Occurances" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <VBox layoutX="43.0" layoutY="131.0" prefHeight="125.0" prefWidth="140.0">
+         <children>
+            <TextField fx:id="input1" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input2" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input3" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input4" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input5" alignment="CENTER" promptText="Enter a String" />
+         </children>
+      </VBox>
+      <VBox layoutX="213.0" layoutY="133.0" prefHeight="120.0" prefWidth="140.0">
+         <children>
+            <TextField fx:id="input6" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input7" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input8" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input9" alignment="CENTER" promptText="Enter a String" />
+            <TextField fx:id="input10" alignment="CENTER" promptText="Enter a String" />
+         </children>
+      </VBox>
+      <VBox layoutX="192.0" layoutY="126.0" prefHeight="137.0" prefWidth="21.0">
+         <children>
+            <Label text="#6">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#7">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#8">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#9">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#10">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="23.0" layoutY="126.0" prefHeight="131.0" prefWidth="21.0">
+         <children>
+            <Label text="#1">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#2">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#3">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#4">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="#5">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="startScan" layoutX="42.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="314.0" text="Start Scan">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="76.0" layoutY="85.0" text="Input Strings to Search">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <GridPane gridLinesVisible="true" layoutX="477.0" layoutY="121.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="showInput1" text="Input#1" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput2" text="Input#2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput3" text="Input#3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput4" text="Input#4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput5" text="Input#5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="output1" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output2" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output3" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output4" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output5" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane gridLinesVisible="true" layoutX="710.0" layoutY="120.0">
+         <children>
+            <Label fx:id="showInput6" text="Input#6" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput7" text="Input#7" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput8" text="Input#8" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput9" text="Input#9" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showInput10" text="Input#10" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="output6" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output7" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output8" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output9" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="output10" text="count" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label fx:id="chart" layoutX="478.0" layoutY="326.0" text="Chart">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="barChartButton" layoutX="42.0" layoutY="314.0" mnemonicParsing="false" text="Bar" />
+      <Button fx:id="lineChartButton" layoutX="129.0" layoutY="314.0" mnemonicParsing="false" text="Line" />
+      <Button fx:id="scatterChartButton" layoutX="219.0" layoutY="314.0" mnemonicParsing="false" text="Scatter" />
+      <Button fx:id="pieChartButton" layoutX="321.0" layoutY="314.0" mnemonicParsing="false" text="Pie" />
+      <PieChart fx:id="pieChart" animated="false" layoutX="288.0" layoutY="365.0" visible="false" />
+      <ScatterChart fx:id="scatterChart" animated="false" layoutX="35.0" layoutY="365.0" prefHeight="400.0" prefWidth="957.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <BarChart fx:id="barChart" animated="false" layoutX="30.0" layoutY="365.0" prefHeight="400.0" prefWidth="974.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>

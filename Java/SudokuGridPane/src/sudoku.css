@@ -1,0 +1,29 @@
+.root {
+    -fx-padding: 10px ;
+}
+
+.cell {
+
+    -fx-background-color:  black, -fx-base ;
+
+    -fx-background-insets: 0, 0 ;
+
+    -fx-padding: 5px ;
+}
+
+.cell:right {
+    -fx-background-insets: 0, 0 2 0 0 ;
+}
+
+.cell:bottom {
+    -fx-background-insets: 0, 0 0 2 0 ;
+}
+
+.cell:right:bottom {
+    -fx-background-insets: 0, 0 2 2 0 ;
+}
+
+.cell .text-field {
+    -fx-pref-width: 2.5em ;
+    -fx-pref-height: 2.5em ;
+}

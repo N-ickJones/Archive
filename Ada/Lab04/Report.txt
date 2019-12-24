@@ -1,0 +1,1110 @@
+--Burris Hash Algorithm--
+  Linear Probe Results
+    Start of 50% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  18
+          Average Probes =   4.800
+      Last 30 Key Entries
+          Minimum Probes =  16
+          Maximum Probes =  59
+          Average Probes =  36.367
+      Index[  1] Empty
+      Index[  2] Empty
+      Index[  3] Empty
+      Index[  4] Empty
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Hash[  7] Probes[  1] Key[Adam            ]
+      Index[  8] Hash[  8] Probes[  1] Key[Bhandari        ]
+      Index[  9] Hash[  8] Probes[  2] Key[Arauza          ]
+      Index[ 10] Hash[ 10] Probes[  1] Key[Alcantara       ]
+      Index[ 11] Hash[ 10] Probes[  2] Key[Red             ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Nienberg        ]
+      Index[ 13] Hash[ 12] Probes[  2] Key[Acevedo         ]
+      Index[ 14] Hash[  9] Probes[  6] Key[Buck            ]
+      Index[ 15] Hash[  8] Probes[  8] Key[Clark           ]
+      Index[ 16] Hash[ 14] Probes[  3] Key[Dugger          ]
+      Index[ 17] Hash[  8] Probes[ 10] Key[Egbe            ]
+      Index[ 18] Hash[  8] Probes[ 11] Key[Clayton         ]
+      Index[ 19] Hash[ 19] Probes[  1] Key[Salkowski       ]
+      Index[ 20] Hash[ 19] Probes[  2] Key[Zulfiqar        ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Cook            ]
+      Index[ 22] Hash[ 21] Probes[  2] Key[Daniels         ]
+      Index[ 23] Hash[ 20] Probes[  4] Key[Qamruddin       ]
+      Index[ 24] Hash[ 22] Probes[  3] Key[Ajose           ]
+      Index[ 25] Hash[ 25] Probes[  1] Key[Carmona         ]
+      Index[ 26] Hash[ 26] Probes[  1] Key[Casper          ]
+      Index[ 27] Hash[ 26] Probes[  2] Key[Paschal         ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Aguirrie        ]
+      Index[ 29] Hash[ 22] Probes[  8] Key[Crouch          ]
+      Index[ 30] Hash[ 29] Probes[  2] Key[Davies          ]
+      Index[ 31] Hash[ 19] Probes[ 13] Key[Ellington       ]
+      Index[ 32] Hash[ 25] Probes[  8] Key[Farral          ]
+      Index[ 33] Hash[ 25] Probes[  9] Key[Garza           ]
+      Index[ 34] Hash[ 25] Probes[ 10] Key[Gurung          ]
+      Index[ 35] Hash[ 26] Probes[ 10] Key[Joseph          ]
+      Index[ 36] Hash[ 19] Probes[ 18] Key[Kelly           ]
+      Index[ 37] Hash[ 25] Probes[ 13] Key[Corey           ]
+      Index[ 38] Hash[ 26] Probes[ 13] Key[Dustin          ]
+      Index[ 39] Hash[  9] Probes[ 31] Key[Robert          ]
+      Index[ 40] Hash[ 18] Probes[ 23] Key[Kyle            ]
+      Index[ 41] Hash[ 22] Probes[ 20] Key[Scott           ]
+      Index[ 42] Hash[ 27] Probes[ 16] Key[Octavio         ]
+      Index[ 43] Hash[ 10] Probes[ 34] Key[Judy            ]
+      Index[ 44] Hash[ 25] Probes[ 20] Key[Derek           ]
+      Index[ 45] Hash[ 13] Probes[ 33] Key[Jeffrey         ]
+      Index[ 46] Hash[ 25] Probes[ 22] Key[Jordon          ]
+      Index[ 47] Hash[ 21] Probes[ 27] Key[Vinnela         ]
+      Index[ 48] Hash[ 25] Probes[ 24] Key[Lisa            ]
+      Index[ 49] Hash[ 10] Probes[ 40] Key[Todd            ]
+      Index[ 50] Hash[ 25] Probes[ 26] Key[Veronica        ]
+      Index[ 51] Hash[ 27] Probes[ 25] Key[Matthew         ]
+      Index[ 52] Hash[ 10] Probes[ 43] Key[Michael         ]
+      Index[ 53] Hash[ 15] Probes[ 39] Key[Akhila          ]
+      Index[ 54] Hash[ 14] Probes[ 41] Key[John            ]
+      Index[ 55] Hash[  8] Probes[ 48] Key[Charles         ]
+      Index[ 56] Hash[ 20] Probes[ 37] Key[James           ]
+      Index[ 57] Hash[ 25] Probes[ 33] Key[Chris           ]
+      Index[ 58] Hash[ 10] Probes[ 49] Key[Wade            ]
+      Index[ 59] Hash[ 25] Probes[ 35] Key[Christopher     ]
+      Index[ 60] Hash[ 25] Probes[ 36] Key[Fernando        ]
+      Index[ 61] Hash[ 27] Probes[ 35] Key[Batbold         ]
+      Index[ 62] Hash[ 11] Probes[ 52] Key[Joel            ]
+      Index[ 63] Hash[  9] Probes[ 55] Key[Fabulous        ]
+      Index[ 64] Hash[ 26] Probes[ 39] Key[Misogamist      ]
+      Index[ 65] Hash[ 16] Probes[ 50] Key[Maiden          ]
+      Index[ 66] Hash[ 11] Probes[ 56] Key[Eye             ]
+      Index[ 67] Hash[ 21] Probes[ 47] Key[Constriction    ]
+      Index[ 68] Hash[ 10] Probes[ 59] Key[Necromancer     ]
+      Index[ 69] Hash[ 21] Probes[ 49] Key[Syncopate       ]
+      Index[ 70] Empty
+      Index[ 71] Empty
+      Index[ 72] Empty
+      Index[ 73] Empty
+      Index[ 74] Empty
+      Index[ 75] Empty
+      Index[ 76] Empty
+      Index[ 77] Empty
+      Index[ 78] Empty
+      Index[ 79] Empty
+      Index[ 80] Empty
+      Index[ 81] Empty
+      Index[ 82] Empty
+      Index[ 83] Empty
+      Index[ 84] Empty
+      Index[ 85] Empty
+      Index[ 86] Empty
+      Index[ 87] Empty
+      Index[ 88] Empty
+      Index[ 89] Empty
+      Index[ 90] Hash[ 90] Probes[  1] Key[1234567890123456]
+      Index[ 91] Empty
+      Index[ 92] Empty
+      Index[ 93] Empty
+      Index[ 94] Empty
+      Index[ 95] Empty
+      Index[ 96] Empty
+      Index[ 97] Empty
+      Index[ 98] Empty
+      Index[ 99] Empty
+      Index[100] Empty
+      Index[101] Empty
+      Index[102] Empty
+      Index[103] Empty
+      Index[104] Empty
+      Index[105] Empty
+      Index[106] Empty
+      Index[107] Empty
+      Index[108] Empty
+      Index[109] Empty
+      Index[110] Empty
+      Index[111] Empty
+      Index[112] Empty
+      Index[113] Empty
+      Index[114] Empty
+      Index[115] Empty
+      Index[116] Empty
+      Index[117] Empty
+      Index[118] Empty
+      Index[119] Empty
+      Index[120] Empty
+      Index[121] Empty
+      Index[122] Empty
+      Index[123] Empty
+      Index[124] Empty
+      Index[125] Empty
+      Index[126] Empty
+      Index[127] Empty
+      Index[128] Empty
+      Theoretically the result should be  1.500 probes to locate key.
+    Start of 90% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  18
+          Average Probes =   4.800
+      Last 30 Key Entries
+          Minimum Probes =  66
+          Maximum Probes = 113
+          Average Probes =  89.167
+      Index[  1] Empty
+      Index[  2] Empty
+      Index[  3] Empty
+      Index[  4] Empty
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Hash[  7] Probes[  1] Key[Adam            ]
+      Index[  8] Hash[  8] Probes[  1] Key[Bhandari        ]
+      Index[  9] Hash[  8] Probes[  2] Key[Arauza          ]
+      Index[ 10] Hash[ 10] Probes[  1] Key[Alcantara       ]
+      Index[ 11] Hash[ 10] Probes[  2] Key[Red             ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Nienberg        ]
+      Index[ 13] Hash[ 12] Probes[  2] Key[Acevedo         ]
+      Index[ 14] Hash[  9] Probes[  6] Key[Buck            ]
+      Index[ 15] Hash[  8] Probes[  8] Key[Clark           ]
+      Index[ 16] Hash[ 14] Probes[  3] Key[Dugger          ]
+      Index[ 17] Hash[  8] Probes[ 10] Key[Egbe            ]
+      Index[ 18] Hash[  8] Probes[ 11] Key[Clayton         ]
+      Index[ 19] Hash[ 19] Probes[  1] Key[Salkowski       ]
+      Index[ 20] Hash[ 19] Probes[  2] Key[Zulfiqar        ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Cook            ]
+      Index[ 22] Hash[ 21] Probes[  2] Key[Daniels         ]
+      Index[ 23] Hash[ 20] Probes[  4] Key[Qamruddin       ]
+      Index[ 24] Hash[ 22] Probes[  3] Key[Ajose           ]
+      Index[ 25] Hash[ 25] Probes[  1] Key[Carmona         ]
+      Index[ 26] Hash[ 26] Probes[  1] Key[Casper          ]
+      Index[ 27] Hash[ 26] Probes[  2] Key[Paschal         ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Aguirrie        ]
+      Index[ 29] Hash[ 22] Probes[  8] Key[Crouch          ]
+      Index[ 30] Hash[ 29] Probes[  2] Key[Davies          ]
+      Index[ 31] Hash[ 19] Probes[ 13] Key[Ellington       ]
+      Index[ 32] Hash[ 25] Probes[  8] Key[Farral          ]
+      Index[ 33] Hash[ 25] Probes[  9] Key[Garza           ]
+      Index[ 34] Hash[ 25] Probes[ 10] Key[Gurung          ]
+      Index[ 35] Hash[ 26] Probes[ 10] Key[Joseph          ]
+      Index[ 36] Hash[ 19] Probes[ 18] Key[Kelly           ]
+      Index[ 37] Hash[ 25] Probes[ 13] Key[Corey           ]
+      Index[ 38] Hash[ 26] Probes[ 13] Key[Dustin          ]
+      Index[ 39] Hash[  9] Probes[ 31] Key[Robert          ]
+      Index[ 40] Hash[ 18] Probes[ 23] Key[Kyle            ]
+      Index[ 41] Hash[ 22] Probes[ 20] Key[Scott           ]
+      Index[ 42] Hash[ 27] Probes[ 16] Key[Octavio         ]
+      Index[ 43] Hash[ 10] Probes[ 34] Key[Judy            ]
+      Index[ 44] Hash[ 25] Probes[ 20] Key[Derek           ]
+      Index[ 45] Hash[ 13] Probes[ 33] Key[Jeffrey         ]
+      Index[ 46] Hash[ 25] Probes[ 22] Key[Jordon          ]
+      Index[ 47] Hash[ 21] Probes[ 27] Key[Vinnela         ]
+      Index[ 48] Hash[ 25] Probes[ 24] Key[Lisa            ]
+      Index[ 49] Hash[ 10] Probes[ 40] Key[Todd            ]
+      Index[ 50] Hash[ 25] Probes[ 26] Key[Veronica        ]
+      Index[ 51] Hash[ 27] Probes[ 25] Key[Matthew         ]
+      Index[ 52] Hash[ 10] Probes[ 43] Key[Michael         ]
+      Index[ 53] Hash[ 15] Probes[ 39] Key[Akhila          ]
+      Index[ 54] Hash[ 14] Probes[ 41] Key[John            ]
+      Index[ 55] Hash[  8] Probes[ 48] Key[Charles         ]
+      Index[ 56] Hash[ 20] Probes[ 37] Key[James           ]
+      Index[ 57] Hash[ 25] Probes[ 33] Key[Chris           ]
+      Index[ 58] Hash[ 10] Probes[ 49] Key[Wade            ]
+      Index[ 59] Hash[ 25] Probes[ 35] Key[Christopher     ]
+      Index[ 60] Hash[ 25] Probes[ 36] Key[Fernando        ]
+      Index[ 61] Hash[ 27] Probes[ 35] Key[Batbold         ]
+      Index[ 62] Hash[ 11] Probes[ 52] Key[Joel            ]
+      Index[ 63] Hash[  9] Probes[ 55] Key[Fabulous        ]
+      Index[ 64] Hash[ 26] Probes[ 39] Key[Misogamist      ]
+      Index[ 65] Hash[ 16] Probes[ 50] Key[Maiden          ]
+      Index[ 66] Hash[ 11] Probes[ 56] Key[Eye             ]
+      Index[ 67] Hash[ 21] Probes[ 47] Key[Constriction    ]
+      Index[ 68] Hash[ 10] Probes[ 59] Key[Necromancer     ]
+      Index[ 69] Hash[ 21] Probes[ 49] Key[Syncopate       ]
+      Index[ 70] Hash[ 18] Probes[ 53] Key[Yolk            ]
+      Index[ 71] Hash[ 27] Probes[ 45] Key[Afterwards      ]
+      Index[ 72] Hash[ 25] Probes[ 48] Key[Person          ]
+      Index[ 73] Hash[ 25] Probes[ 49] Key[Northwest       ]
+      Index[ 74] Hash[ 25] Probes[ 50] Key[Irreversible    ]
+      Index[ 75] Hash[  9] Probes[ 67] Key[Fabricate       ]
+      Index[ 76] Hash[ 21] Probes[ 56] Key[Honor           ]
+      Index[ 77] Hash[  8] Probes[ 70] Key[Staple          ]
+      Index[ 78] Hash[ 11] Probes[ 68] Key[Under           ]
+      Index[ 79] Hash[ 27] Probes[ 53] Key[Jutty           ]
+      Index[ 80] Hash[ 21] Probes[ 60] Key[Finagle         ]
+      Index[ 81] Hash[ 21] Probes[ 61] Key[Cook            ]
+      Index[ 82] Hash[ 25] Probes[ 58] Key[Rush            ]
+      Index[ 83] Hash[ 20] Probes[ 64] Key[Wine            ]
+      Index[ 84] Hash[ 25] Probes[ 60] Key[Screen          ]
+      Index[ 85] Hash[ 25] Probes[ 61] Key[Perfect         ]
+      Index[ 86] Hash[ 18] Probes[ 69] Key[mole            ]
+      Index[ 87] Hash[ 25] Probes[ 63] Key[parasympathetic ]
+      Index[ 88] Hash[ 16] Probes[ 73] Key[poison          ]
+      Index[ 89] Hash[ 28] Probes[ 62] Key[brutalize       ]
+      Index[ 90] Hash[ 90] Probes[  1] Key[1234567890123456]
+      Index[ 91] Hash[ 22] Probes[ 70] Key[cap             ]
+      Index[ 92] Hash[ 27] Probes[ 66] Key[ratiocination   ]
+      Index[ 93] Hash[ 28] Probes[ 66] Key[cauldron        ]
+      Index[ 94] Hash[ 12] Probes[ 83] Key[prepossess      ]
+      Index[ 95] Hash[ 21] Probes[ 75] Key[wince           ]
+      Index[ 96] Hash[ 27] Probes[ 70] Key[orthodontist    ]
+      Index[ 97] Hash[ 28] Probes[ 70] Key[live            ]
+      Index[ 98] Hash[ 14] Probes[ 85] Key[magnetic        ]
+      Index[ 99] Hash[ 19] Probes[ 81] Key[inlet           ]
+      Index[100] Hash[ 21] Probes[ 80] Key[constrain       ]
+      Index[101] Hash[ 25] Probes[ 77] Key[marsupial       ]
+      Index[102] Hash[ 27] Probes[ 76] Key[rationalize     ]
+      Index[103] Hash[  7] Probes[ 97] Key[scat            ]
+      Index[104] Hash[ 19] Probes[ 86] Key[toluene         ]
+      Index[105] Hash[ 26] Probes[ 80] Key[wet             ]
+      Index[106] Hash[  8] Probes[ 99] Key[sparse          ]
+      Index[107] Hash[  8] Probes[100] Key[quandary        ]
+      Index[108] Hash[ 10] Probes[ 99] Key[dactyl          ]
+      Index[109] Hash[ 26] Probes[ 84] Key[nosegay         ]
+      Index[110] Hash[ 27] Probes[ 84] Key[option          ]
+      Index[111] Hash[ 25] Probes[ 87] Key[forgetful       ]
+      Index[112] Hash[ 16] Probes[ 97] Key[privilege       ]
+      Index[113] Hash[ 22] Probes[ 92] Key[sponsor         ]
+      Index[114] Hash[ 15] Probes[100] Key[exhilarate      ]
+      Index[115] Hash[  8] Probes[108] Key[guard           ]
+      Index[116] Hash[ 14] Probes[103] Key[noggin          ]
+      Index[117] Hash[ 22] Probes[ 96] Key[prologue        ]
+      Index[118] Hash[  7] Probes[112] Key[seal            ]
+      Index[119] Hash[  7] Probes[113] Key[seat            ]
+      Index[120] Hash[ 19] Probes[102] Key[tiller          ]
+      Index[121] Hash[ 15] Probes[107] Key[ichthyosaur     ]
+      Index[122] Empty
+      Index[123] Empty
+      Index[124] Empty
+      Index[125] Empty
+      Index[126] Empty
+      Index[127] Empty
+      Index[128] Empty
+      Theoretically the result should be  5.500 probes to locate key.
+  Random Probe Results
+    Start of 50% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =   4
+          Average Probes =   1.733
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  15
+          Average Probes =   7.200
+      Index[  1] Empty
+      Index[  2] Empty
+      Index[  3] Empty
+      Index[  4] Empty
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Hash[  7] Probes[  1] Key[Adam            ]
+      Index[  8] Hash[  8] Probes[  1] Key[Bhandari        ]
+      Index[  9] Hash[  9] Probes[  1] Key[Buck            ]
+      Index[ 10] Hash[ 10] Probes[  1] Key[Alcantara       ]
+      Index[ 11] Hash[ 11] Probes[  1] Key[Joel            ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Nienberg        ]
+      Index[ 13] Hash[ 13] Probes[  1] Key[Jeffrey         ]
+      Index[ 14] Hash[ 14] Probes[  1] Key[Dugger          ]
+      Index[ 15] Hash[  8] Probes[  2] Key[Arauza          ]
+      Index[ 16] Hash[  9] Probes[  2] Key[Robert          ]
+      Index[ 17] Hash[ 10] Probes[  2] Key[Red             ]
+      Index[ 18] Hash[ 18] Probes[  1] Key[Kyle            ]
+      Index[ 19] Hash[ 19] Probes[  1] Key[Salkowski       ]
+      Index[ 20] Hash[ 20] Probes[  1] Key[Qamruddin       ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Cook            ]
+      Index[ 22] Hash[ 22] Probes[  1] Key[Ajose           ]
+      Index[ 23] Hash[  9] Probes[  3] Key[Fabulous        ]
+      Index[ 24] Hash[ 10] Probes[  3] Key[Judy            ]
+      Index[ 25] Hash[ 25] Probes[  1] Key[Carmona         ]
+      Index[ 26] Hash[ 26] Probes[  1] Key[Casper          ]
+      Index[ 27] Hash[ 27] Probes[  1] Key[Octavio         ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Aguirrie        ]
+      Index[ 29] Hash[  8] Probes[  4] Key[Clark           ]
+      Index[ 30] Hash[ 16] Probes[  3] Key[Maiden          ]
+      Index[ 31] Hash[ 10] Probes[  4] Key[Todd            ]
+      Index[ 32] Hash[ 25] Probes[  2] Key[Farral          ]
+      Index[ 33] Hash[ 26] Probes[  2] Key[Paschal         ]
+      Index[ 34] Hash[ 27] Probes[  2] Key[Matthew         ]
+      Index[ 35] Hash[ 21] Probes[  3] Key[Daniels         ]
+      Index[ 36] Hash[ 22] Probes[  3] Key[Crouch          ]
+      Index[ 37] Empty
+      Index[ 38] Hash[ 10] Probes[  5] Key[Michael         ]
+      Index[ 39] Hash[ 25] Probes[  3] Key[Garza           ]
+      Index[ 40] Hash[ 19] Probes[  4] Key[Zulfiqar        ]
+      Index[ 41] Hash[ 20] Probes[  4] Key[James           ]
+      Index[ 42] Hash[ 21] Probes[  4] Key[Vinnela         ]
+      Index[ 43] Hash[ 29] Probes[  3] Key[Davies          ]
+      Index[ 44] Empty
+      Index[ 45] Hash[ 10] Probes[  6] Key[Wade            ]
+      Index[ 46] Hash[ 25] Probes[  4] Key[Gurung          ]
+      Index[ 47] Hash[ 12] Probes[  6] Key[Acevedo         ]
+      Index[ 48] Hash[ 27] Probes[  4] Key[Batbold         ]
+      Index[ 49] Hash[ 14] Probes[  6] Key[John            ]
+      Index[ 50] Hash[  8] Probes[  7] Key[Egbe            ]
+      Index[ 51] Empty
+      Index[ 52] Hash[ 10] Probes[  7] Key[Necromancer     ]
+      Index[ 53] Hash[ 25] Probes[  5] Key[Corey           ]
+      Index[ 54] Hash[ 19] Probes[  6] Key[Ellington       ]
+      Index[ 55] Empty
+      Index[ 56] Hash[ 21] Probes[  6] Key[Constriction    ]
+      Index[ 57] Hash[  8] Probes[  8] Key[Clayton         ]
+      Index[ 58] Empty
+      Index[ 59] Empty
+      Index[ 60] Hash[ 25] Probes[  6] Key[Derek           ]
+      Index[ 61] Hash[ 26] Probes[  6] Key[Joseph          ]
+      Index[ 62] Empty
+      Index[ 63] Hash[ 21] Probes[  7] Key[Syncopate       ]
+      Index[ 64] Hash[ 22] Probes[  7] Key[Scott           ]
+      Index[ 65] Empty
+      Index[ 66] Empty
+      Index[ 67] Hash[ 25] Probes[  7] Key[Jordon          ]
+      Index[ 68] Hash[ 19] Probes[  8] Key[Kelly           ]
+      Index[ 69] Empty
+      Index[ 70] Empty
+      Index[ 71] Hash[ 15] Probes[  9] Key[Akhila          ]
+      Index[ 72] Empty
+      Index[ 73] Empty
+      Index[ 74] Hash[ 25] Probes[  8] Key[Lisa            ]
+      Index[ 75] Hash[ 26] Probes[  8] Key[Dustin          ]
+      Index[ 76] Empty
+      Index[ 77] Empty
+      Index[ 78] Hash[  8] Probes[ 11] Key[Charles         ]
+      Index[ 79] Empty
+      Index[ 80] Empty
+      Index[ 81] Hash[ 25] Probes[  9] Key[Veronica        ]
+      Index[ 82] Hash[ 26] Probes[  9] Key[Misogamist      ]
+      Index[ 83] Empty
+      Index[ 84] Empty
+      Index[ 85] Empty
+      Index[ 86] Empty
+      Index[ 87] Empty
+      Index[ 88] Hash[ 25] Probes[ 10] Key[Chris           ]
+      Index[ 89] Empty
+      Index[ 90] Hash[ 90] Probes[  1] Key[1234567890123456]
+      Index[ 91] Empty
+      Index[ 92] Empty
+      Index[ 93] Empty
+      Index[ 94] Empty
+      Index[ 95] Hash[ 25] Probes[ 11] Key[Christopher     ]
+      Index[ 96] Empty
+      Index[ 97] Empty
+      Index[ 98] Empty
+      Index[ 99] Empty
+      Index[100] Empty
+      Index[101] Empty
+      Index[102] Hash[ 25] Probes[ 12] Key[Fernando        ]
+      Index[103] Empty
+      Index[104] Empty
+      Index[105] Empty
+      Index[106] Empty
+      Index[107] Empty
+      Index[108] Empty
+      Index[109] Hash[ 11] Probes[ 15] Key[Eye             ]
+      Index[110] Empty
+      Index[111] Empty
+      Index[112] Empty
+      Index[113] Empty
+      Index[114] Empty
+      Index[115] Empty
+      Index[116] Empty
+      Index[117] Empty
+      Index[118] Empty
+      Index[119] Empty
+      Index[120] Empty
+      Index[121] Empty
+      Index[122] Empty
+      Index[123] Empty
+      Index[124] Empty
+      Index[125] Empty
+      Index[126] Empty
+      Index[127] Empty
+      Index[128] Empty
+      Theoretically the result should be  1.386 probes to locate a key.
+    Start of 90% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  37
+          Average Probes =   4.367
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  35
+          Average Probes =  15.567
+      Index[  1] Empty
+      Index[  2] Hash[ 25] Probes[ 16] Key[Northwest       ]
+      Index[  3] Hash[  7] Probes[ 37] Key[seal            ]
+      Index[  4] Empty
+      Index[  5] Hash[  7] Probes[ 19] Key[scat            ]
+      Index[  6] Hash[ 22] Probes[ 17] Key[prologue        ]
+      Index[  7] Hash[  7] Probes[  1] Key[Adam            ]
+      Index[  8] Hash[  8] Probes[  1] Key[Bhandari        ]
+      Index[  9] Hash[  9] Probes[  1] Key[Buck            ]
+      Index[ 10] Hash[ 10] Probes[  1] Key[Alcantara       ]
+      Index[ 11] Hash[ 11] Probes[  1] Key[Joel            ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Nienberg        ]
+      Index[ 13] Hash[ 13] Probes[  1] Key[Jeffrey         ]
+      Index[ 14] Hash[ 14] Probes[  1] Key[Dugger          ]
+      Index[ 15] Hash[  8] Probes[  2] Key[Arauza          ]
+      Index[ 16] Hash[  9] Probes[  2] Key[Robert          ]
+      Index[ 17] Hash[ 10] Probes[  2] Key[Red             ]
+      Index[ 18] Hash[ 18] Probes[  1] Key[Kyle            ]
+      Index[ 19] Hash[ 19] Probes[  1] Key[Salkowski       ]
+      Index[ 20] Hash[ 20] Probes[  1] Key[Qamruddin       ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Cook            ]
+      Index[ 22] Hash[ 22] Probes[  1] Key[Ajose           ]
+      Index[ 23] Hash[  9] Probes[  3] Key[Fabulous        ]
+      Index[ 24] Hash[ 10] Probes[  3] Key[Judy            ]
+      Index[ 25] Hash[ 25] Probes[  1] Key[Carmona         ]
+      Index[ 26] Hash[ 26] Probes[  1] Key[Casper          ]
+      Index[ 27] Hash[ 27] Probes[  1] Key[Octavio         ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Aguirrie        ]
+      Index[ 29] Hash[  8] Probes[  4] Key[Clark           ]
+      Index[ 30] Hash[ 16] Probes[  3] Key[Maiden          ]
+      Index[ 31] Hash[ 10] Probes[  4] Key[Todd            ]
+      Index[ 32] Hash[ 25] Probes[  2] Key[Farral          ]
+      Index[ 33] Hash[ 26] Probes[  2] Key[Paschal         ]
+      Index[ 34] Hash[ 27] Probes[  2] Key[Matthew         ]
+      Index[ 35] Hash[ 21] Probes[  3] Key[Daniels         ]
+      Index[ 36] Hash[ 22] Probes[  3] Key[Crouch          ]
+      Index[ 37] Hash[ 25] Probes[ 21] Key[Irreversible    ]
+      Index[ 38] Hash[ 10] Probes[  5] Key[Michael         ]
+      Index[ 39] Hash[ 25] Probes[  3] Key[Garza           ]
+      Index[ 40] Hash[ 19] Probes[  4] Key[Zulfiqar        ]
+      Index[ 41] Hash[ 20] Probes[  4] Key[James           ]
+      Index[ 42] Hash[ 21] Probes[  4] Key[Vinnela         ]
+      Index[ 43] Hash[ 29] Probes[  3] Key[Davies          ]
+      Index[ 44] Hash[  9] Probes[  6] Key[Fabricate       ]
+      Index[ 45] Hash[ 10] Probes[  6] Key[Wade            ]
+      Index[ 46] Hash[ 25] Probes[  4] Key[Gurung          ]
+      Index[ 47] Hash[ 12] Probes[  6] Key[Acevedo         ]
+      Index[ 48] Hash[ 27] Probes[  4] Key[Batbold         ]
+      Index[ 49] Hash[ 14] Probes[  6] Key[John            ]
+      Index[ 50] Hash[  8] Probes[  7] Key[Egbe            ]
+      Index[ 51] Hash[ 11] Probes[ 25] Key[Under           ]
+      Index[ 52] Hash[ 10] Probes[  7] Key[Necromancer     ]
+      Index[ 53] Hash[ 25] Probes[  5] Key[Corey           ]
+      Index[ 54] Hash[ 19] Probes[  6] Key[Ellington       ]
+      Index[ 55] Hash[ 27] Probes[  5] Key[Afterwards      ]
+      Index[ 56] Hash[ 21] Probes[  6] Key[Constriction    ]
+      Index[ 57] Hash[  8] Probes[  8] Key[Clayton         ]
+      Index[ 58] Hash[ 25] Probes[ 24] Key[Rush            ]
+      Index[ 59] Hash[ 10] Probes[  8] Key[dactyl          ]
+      Index[ 60] Hash[ 25] Probes[  6] Key[Derek           ]
+      Index[ 61] Hash[ 26] Probes[  6] Key[Joseph          ]
+      Index[ 62] Hash[ 27] Probes[  6] Key[Jutty           ]
+      Index[ 63] Hash[ 21] Probes[  7] Key[Syncopate       ]
+      Index[ 64] Hash[ 22] Probes[  7] Key[Scott           ]
+      Index[ 65] Hash[ 25] Probes[ 25] Key[Screen          ]
+      Index[ 66] Hash[  7] Probes[ 46] Key[seat            ]
+      Index[ 67] Hash[ 25] Probes[  7] Key[Jordon          ]
+      Index[ 68] Hash[ 19] Probes[  8] Key[Kelly           ]
+      Index[ 69] Hash[ 20] Probes[  8] Key[Wine            ]
+      Index[ 70] Hash[ 21] Probes[  8] Key[Honor           ]
+      Index[ 71] Hash[ 15] Probes[  9] Key[Akhila          ]
+      Index[ 72] Hash[ 25] Probes[ 26] Key[Perfect         ]
+      Index[ 73] Hash[ 19] Probes[ 27] Key[tiller          ]
+      Index[ 74] Hash[ 25] Probes[  8] Key[Lisa            ]
+      Index[ 75] Hash[ 26] Probes[  8] Key[Dustin          ]
+      Index[ 76] Hash[ 27] Probes[  8] Key[ratiocination   ]
+      Index[ 77] Hash[ 21] Probes[  9] Key[Finagle         ]
+      Index[ 78] Hash[  8] Probes[ 11] Key[Charles         ]
+      Index[ 79] Hash[ 18] Probes[ 28] Key[mole            ]
+      Index[ 80] Empty
+      Index[ 81] Hash[ 25] Probes[  9] Key[Veronica        ]
+      Index[ 82] Hash[ 26] Probes[  9] Key[Misogamist      ]
+      Index[ 83] Hash[ 27] Probes[  9] Key[orthodontist    ]
+      Index[ 84] Hash[ 21] Probes[ 10] Key[Cook            ]
+      Index[ 85] Hash[  8] Probes[ 12] Key[Staple          ]
+      Index[ 86] Hash[ 25] Probes[ 28] Key[parasympathetic ]
+      Index[ 87] Empty
+      Index[ 88] Hash[ 25] Probes[ 10] Key[Chris           ]
+      Index[ 89] Hash[ 12] Probes[ 12] Key[prepossess      ]
+      Index[ 90] Hash[ 90] Probes[  1] Key[1234567890123456]
+      Index[ 91] Hash[ 28] Probes[ 10] Key[brutalize       ]
+      Index[ 92] Hash[ 22] Probes[ 11] Key[cap             ]
+      Index[ 93] Hash[ 16] Probes[ 12] Key[poison          ]
+      Index[ 94] Empty
+      Index[ 95] Hash[ 25] Probes[ 11] Key[Christopher     ]
+      Index[ 96] Hash[ 19] Probes[ 12] Key[inlet           ]
+      Index[ 97] Hash[ 27] Probes[ 11] Key[rationalize     ]
+      Index[ 98] Hash[ 28] Probes[ 11] Key[cauldron        ]
+      Index[ 99] Hash[  8] Probes[ 14] Key[sparse          ]
+      Index[100] Hash[ 25] Probes[ 30] Key[marsupial       ]
+      Index[101] Empty
+      Index[102] Hash[ 25] Probes[ 12] Key[Fernando        ]
+      Index[103] Hash[ 19] Probes[ 13] Key[toluene         ]
+      Index[104] Hash[ 27] Probes[ 12] Key[option          ]
+      Index[105] Hash[ 21] Probes[ 13] Key[wince           ]
+      Index[106] Hash[  8] Probes[ 15] Key[quandary        ]
+      Index[107] Hash[ 25] Probes[ 31] Key[forgetful       ]
+      Index[108] Empty
+      Index[109] Hash[ 11] Probes[ 15] Key[Eye             ]
+      Index[110] Hash[ 26] Probes[ 13] Key[wet             ]
+      Index[111] Hash[ 15] Probes[ 33] Key[ichthyosaur     ]
+      Index[112] Hash[ 28] Probes[ 13] Key[live            ]
+      Index[113] Hash[ 22] Probes[ 14] Key[sponsor         ]
+      Index[114] Hash[ 16] Probes[ 15] Key[privilege       ]
+      Index[115] Empty
+      Index[116] Hash[ 18] Probes[ 15] Key[Yolk            ]
+      Index[117] Hash[ 26] Probes[ 14] Key[nosegay         ]
+      Index[118] Empty
+      Index[119] Hash[ 14] Probes[ 16] Key[magnetic        ]
+      Index[120] Hash[ 15] Probes[ 16] Key[exhilarate      ]
+      Index[121] Empty
+      Index[122] Empty
+      Index[123] Hash[ 25] Probes[ 15] Key[Person          ]
+      Index[124] Hash[ 14] Probes[ 35] Key[noggin          ]
+      Index[125] Empty
+      Index[126] Hash[ 21] Probes[ 16] Key[constrain       ]
+      Index[127] Hash[  8] Probes[ 18] Key[guard           ]
+      Index[128] Empty
+      Theoretically the result should be  2.558 probes to locate a key.
+--My Hash Algorithm--
+  Linear Probe Results
+    Start of 50% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =   5
+          Average Probes =   1.633
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =   5
+          Average Probes =   1.533
+      Index[  1] Empty
+      Index[  2] Hash[  2] Probes[  1] Key[Akhila          ]
+      Index[  3] Empty
+      Index[  4] Hash[  4] Probes[  1] Key[Carmona         ]
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Empty
+      Index[  8] Hash[  8] Probes[  1] Key[Clark           ]
+      Index[  9] Hash[  9] Probes[  1] Key[Casper          ]
+      Index[ 10] Hash[  9] Probes[  2] Key[Zulfiqar        ]
+      Index[ 11] Empty
+      Index[ 12] Hash[ 12] Probes[  1] Key[Davies          ]
+      Index[ 13] Hash[ 12] Probes[  2] Key[Derek           ]
+      Index[ 14] Hash[ 13] Probes[  2] Key[Jeffrey         ]
+      Index[ 15] Hash[ 15] Probes[  1] Key[Clayton         ]
+      Index[ 16] Hash[ 16] Probes[  1] Key[Aguirrie        ]
+      Index[ 17] Hash[ 14] Probes[  4] Key[James           ]
+      Index[ 18] Hash[ 17] Probes[  2] Key[Maiden          ]
+      Index[ 19] Empty
+      Index[ 20] Empty
+      Index[ 21] Hash[ 21] Probes[  1] Key[Arauza          ]
+      Index[ 22] Hash[ 21] Probes[  2] Key[Farral          ]
+      Index[ 23] Hash[ 23] Probes[  1] Key[Ajose           ]
+      Index[ 24] Hash[ 21] Probes[  4] Key[Chris           ]
+      Index[ 25] Hash[ 21] Probes[  5] Key[Christopher     ]
+      Index[ 26] Empty
+      Index[ 27] Empty
+      Index[ 28] Hash[ 28] Probes[  1] Key[Buck            ]
+      Index[ 29] Hash[ 29] Probes[  1] Key[Ellington       ]
+      Index[ 30] Hash[ 29] Probes[  2] Key[Fernando        ]
+      Index[ 31] Empty
+      Index[ 32] Empty
+      Index[ 33] Hash[ 33] Probes[  1] Key[Garza           ]
+      Index[ 34] Hash[ 33] Probes[  2] Key[Michael         ]
+      Index[ 35] Hash[ 35] Probes[  1] Key[Kelly           ]
+      Index[ 36] Hash[ 35] Probes[  2] Key[Necromancer     ]
+      Index[ 37] Empty
+      Index[ 38] Hash[ 38] Probes[  1] Key[Cook            ]
+      Index[ 39] Hash[ 38] Probes[  2] Key[Corey           ]
+      Index[ 40] Hash[ 40] Probes[  1] Key[Dugger          ]
+      Index[ 41] Empty
+      Index[ 42] Empty
+      Index[ 43] Empty
+      Index[ 44] Hash[ 44] Probes[  1] Key[Constriction    ]
+      Index[ 45] Empty
+      Index[ 46] Empty
+      Index[ 47] Hash[ 47] Probes[  1] Key[Nienberg        ]
+      Index[ 48] Hash[ 48] Probes[  1] Key[Paschal         ]
+      Index[ 49] Hash[ 48] Probes[  2] Key[Wade            ]
+      Index[ 50] Hash[ 50] Probes[  1] Key[Octavio         ]
+      Index[ 51] Hash[ 47] Probes[  5] Key[Joel            ]
+      Index[ 52] Empty
+      Index[ 53] Empty
+      Index[ 54] Hash[ 54] Probes[  1] Key[Salkowski       ]
+      Index[ 55] Hash[ 55] Probes[  1] Key[Qamruddin       ]
+      Index[ 56] Hash[ 54] Probes[  3] Key[Lisa            ]
+      Index[ 57] Hash[ 57] Probes[  1] Key[Crouch          ]
+      Index[ 58] Hash[ 55] Probes[  4] Key[Matthew         ]
+      Index[ 59] Hash[ 55] Probes[  5] Key[John            ]
+      Index[ 60] Empty
+      Index[ 61] Empty
+      Index[ 62] Empty
+      Index[ 63] Empty
+      Index[ 64] Empty
+      Index[ 65] Hash[ 65] Probes[  1] Key[Jordon          ]
+      Index[ 66] Hash[ 66] Probes[  1] Key[Robert          ]
+      Index[ 67] Empty
+      Index[ 68] Hash[ 68] Probes[  1] Key[Joseph          ]
+      Index[ 69] Empty
+      Index[ 70] Empty
+      Index[ 71] Empty
+      Index[ 72] Hash[ 72] Probes[  1] Key[Misogamist      ]
+      Index[ 73] Empty
+      Index[ 74] Empty
+      Index[ 75] Hash[ 75] Probes[  1] Key[Scott           ]
+      Index[ 76] Hash[ 76] Probes[  1] Key[Judy            ]
+      Index[ 77] Hash[ 77] Probes[  1] Key[Dustin          ]
+      Index[ 78] Hash[ 77] Probes[  2] Key[Todd            ]
+      Index[ 79] Empty
+      Index[ 80] Empty
+      Index[ 81] Empty
+      Index[ 82] Empty
+      Index[ 83] Empty
+      Index[ 84] Empty
+      Index[ 85] Empty
+      Index[ 86] Empty
+      Index[ 87] Empty
+      Index[ 88] Hash[ 88] Probes[  1] Key[Gurung          ]
+      Index[ 89] Hash[ 88] Probes[  2] Key[Kyle            ]
+      Index[ 90] Empty
+      Index[ 91] Empty
+      Index[ 92] Empty
+      Index[ 93] Empty
+      Index[ 94] Hash[ 94] Probes[  1] Key[Veronica        ]
+      Index[ 95] Empty
+      Index[ 96] Empty
+      Index[ 97] Hash[ 97] Probes[  1] Key[Vinnela         ]
+      Index[ 98] Empty
+      Index[ 99] Hash[ 99] Probes[  1] Key[Red             ]
+      Index[100] Hash[ 99] Probes[  2] Key[Adam            ]
+      Index[101] Empty
+      Index[102] Empty
+      Index[103] Empty
+      Index[104] Empty
+      Index[105] Empty
+      Index[106] Empty
+      Index[107] Empty
+      Index[108] Empty
+      Index[109] Hash[109] Probes[  1] Key[Eye             ]
+      Index[110] Empty
+      Index[111] Empty
+      Index[112] Empty
+      Index[113] Hash[113] Probes[  1] Key[Acevedo         ]
+      Index[114] Empty
+      Index[115] Hash[115] Probes[  1] Key[Alcantara       ]
+      Index[116] Hash[116] Probes[  1] Key[Bhandari        ]
+      Index[117] Empty
+      Index[118] Hash[118] Probes[  1] Key[Egbe            ]
+      Index[119] Empty
+      Index[120] Hash[120] Probes[  1] Key[1234567890123456]
+      Index[121] Hash[121] Probes[  1] Key[Batbold         ]
+      Index[122] Hash[120] Probes[  3] Key[Fabulous        ]
+      Index[123] Hash[122] Probes[  2] Key[Syncopate       ]
+      Index[124] Hash[124] Probes[  1] Key[Daniels         ]
+      Index[125] Hash[124] Probes[  2] Key[Charles         ]
+      Index[126] Empty
+      Index[127] Empty
+      Index[128] Empty
+      Theoretically the result should be  1.500 probes to locate key.
+    Start of 90% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  11
+          Average Probes =   2.233
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  54
+          Average Probes =   6.433
+      Index[  1] Empty
+      Index[  2] Hash[  2] Probes[  1] Key[Akhila          ]
+      Index[  3] Empty
+      Index[  4] Hash[  4] Probes[  1] Key[Carmona         ]
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Hash[  7] Probes[  1] Key[Afterwards      ]
+      Index[  8] Hash[  8] Probes[  1] Key[Clark           ]
+      Index[  9] Hash[  9] Probes[  1] Key[Casper          ]
+      Index[ 10] Hash[  9] Probes[  2] Key[Zulfiqar        ]
+      Index[ 11] Hash[  9] Probes[  3] Key[cauldron        ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Davies          ]
+      Index[ 13] Hash[ 12] Probes[  2] Key[Derek           ]
+      Index[ 14] Hash[ 13] Probes[  2] Key[Jeffrey         ]
+      Index[ 15] Hash[ 15] Probes[  1] Key[Clayton         ]
+      Index[ 16] Hash[ 16] Probes[  1] Key[Aguirrie        ]
+      Index[ 17] Hash[ 14] Probes[  4] Key[James           ]
+      Index[ 18] Hash[ 17] Probes[  2] Key[Maiden          ]
+      Index[ 19] Empty
+      Index[ 20] Hash[ 20] Probes[  1] Key[Finagle         ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Arauza          ]
+      Index[ 22] Hash[ 21] Probes[  2] Key[Farral          ]
+      Index[ 23] Hash[ 23] Probes[  1] Key[Ajose           ]
+      Index[ 24] Hash[ 21] Probes[  4] Key[Chris           ]
+      Index[ 25] Hash[ 21] Probes[  5] Key[Christopher     ]
+      Index[ 26] Hash[ 23] Probes[  4] Key[magnetic        ]
+      Index[ 27] Hash[ 23] Probes[  5] Key[wet             ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Buck            ]
+      Index[ 29] Hash[ 29] Probes[  1] Key[Ellington       ]
+      Index[ 30] Hash[ 29] Probes[  2] Key[Fernando        ]
+      Index[ 31] Hash[ 21] Probes[ 11] Key[ichthyosaur     ]
+      Index[ 32] Empty
+      Index[ 33] Hash[ 33] Probes[  1] Key[Garza           ]
+      Index[ 34] Hash[ 33] Probes[  2] Key[Michael         ]
+      Index[ 35] Hash[ 35] Probes[  1] Key[Kelly           ]
+      Index[ 36] Hash[ 35] Probes[  2] Key[Necromancer     ]
+      Index[ 37] Empty
+      Index[ 38] Hash[ 38] Probes[  1] Key[Cook            ]
+      Index[ 39] Hash[ 38] Probes[  2] Key[Corey           ]
+      Index[ 40] Hash[ 40] Probes[  1] Key[Dugger          ]
+      Index[ 41] Hash[ 38] Probes[  4] Key[Cook            ]
+      Index[ 42] Empty
+      Index[ 43] Empty
+      Index[ 44] Hash[ 44] Probes[  1] Key[Constriction    ]
+      Index[ 45] Hash[ 44] Probes[  2] Key[parasympathetic ]
+      Index[ 46] Hash[ 44] Probes[  3] Key[constrain       ]
+      Index[ 47] Hash[ 47] Probes[  1] Key[Nienberg        ]
+      Index[ 48] Hash[ 48] Probes[  1] Key[Paschal         ]
+      Index[ 49] Hash[ 48] Probes[  2] Key[Wade            ]
+      Index[ 50] Hash[ 50] Probes[  1] Key[Octavio         ]
+      Index[ 51] Hash[ 47] Probes[  5] Key[Joel            ]
+      Index[ 52] Hash[ 51] Probes[  2] Key[cap             ]
+      Index[ 53] Hash[ 47] Probes[  7] Key[inlet           ]
+      Index[ 54] Hash[ 54] Probes[  1] Key[Salkowski       ]
+      Index[ 55] Hash[ 55] Probes[  1] Key[Qamruddin       ]
+      Index[ 56] Hash[ 54] Probes[  3] Key[Lisa            ]
+      Index[ 57] Hash[ 57] Probes[  1] Key[Crouch          ]
+      Index[ 58] Hash[ 55] Probes[  4] Key[Matthew         ]
+      Index[ 59] Hash[ 55] Probes[  5] Key[John            ]
+      Index[ 60] Hash[ 60] Probes[  1] Key[Honor           ]
+      Index[ 61] Hash[ 61] Probes[  1] Key[Perfect         ]
+      Index[ 62] Hash[ 50] Probes[ 13] Key[marsupial       ]
+      Index[ 63] Hash[ 47] Probes[ 17] Key[scat            ]
+      Index[ 64] Hash[ 64] Probes[  1] Key[brutalize       ]
+      Index[ 65] Hash[ 65] Probes[  1] Key[Jordon          ]
+      Index[ 66] Hash[ 66] Probes[  1] Key[Robert          ]
+      Index[ 67] Hash[ 66] Probes[  2] Key[Screen          ]
+      Index[ 68] Hash[ 68] Probes[  1] Key[Joseph          ]
+      Index[ 69] Hash[ 66] Probes[  4] Key[mole            ]
+      Index[ 70] Hash[ 64] Probes[  7] Key[ratiocination   ]
+      Index[ 71] Hash[ 71] Probes[  1] Key[Irreversible    ]
+      Index[ 72] Hash[ 72] Probes[  1] Key[Misogamist      ]
+      Index[ 73] Hash[ 64] Probes[ 10] Key[live            ]
+      Index[ 74] Hash[ 74] Probes[  1] Key[Person          ]
+      Index[ 75] Hash[ 75] Probes[  1] Key[Scott           ]
+      Index[ 76] Hash[ 76] Probes[  1] Key[Judy            ]
+      Index[ 77] Hash[ 77] Probes[  1] Key[Dustin          ]
+      Index[ 78] Hash[ 77] Probes[  2] Key[Todd            ]
+      Index[ 79] Hash[ 79] Probes[  1] Key[Under           ]
+      Index[ 80] Hash[ 64] Probes[ 17] Key[rationalize     ]
+      Index[ 81] Hash[ 52] Probes[ 30] Key[forgetful       ]
+      Index[ 82] Hash[ 57] Probes[ 26] Key[exhilarate      ]
+      Index[ 83] Hash[ 51] Probes[ 33] Key[guard           ]
+      Index[ 84] Hash[ 84] Probes[  1] Key[prepossess      ]
+      Index[ 85] Hash[ 84] Probes[  2] Key[sparse          ]
+      Index[ 86] Hash[ 86] Probes[  1] Key[poison          ]
+      Index[ 87] Hash[ 87] Probes[  1] Key[quandary        ]
+      Index[ 88] Hash[ 88] Probes[  1] Key[Gurung          ]
+      Index[ 89] Hash[ 88] Probes[  2] Key[Kyle            ]
+      Index[ 90] Hash[ 90] Probes[  1] Key[wince           ]
+      Index[ 91] Hash[ 84] Probes[  8] Key[nosegay         ]
+      Index[ 92] Hash[ 92] Probes[  1] Key[Wine            ]
+      Index[ 93] Hash[ 62] Probes[ 32] Key[noggin          ]
+      Index[ 94] Hash[ 94] Probes[  1] Key[Veronica        ]
+      Index[ 95] Hash[ 94] Probes[  2] Key[Staple          ]
+      Index[ 96] Hash[ 45] Probes[ 52] Key[seal            ]
+      Index[ 97] Hash[ 97] Probes[  1] Key[Vinnela         ]
+      Index[ 98] Hash[ 97] Probes[  2] Key[Northwest       ]
+      Index[ 99] Hash[ 99] Probes[  1] Key[Red             ]
+      Index[100] Hash[ 99] Probes[  2] Key[Adam            ]
+      Index[101] Hash[ 97] Probes[  5] Key[option          ]
+      Index[102] Hash[102] Probes[  1] Key[orthodontist    ]
+      Index[103] Hash[103] Probes[  1] Key[Jutty           ]
+      Index[104] Hash[ 98] Probes[  7] Key[privilege       ]
+      Index[105] Hash[100] Probes[  6] Key[prologue        ]
+      Index[106] Hash[ 53] Probes[ 54] Key[seat            ]
+      Index[107] Hash[ 83] Probes[ 25] Key[tiller          ]
+      Index[108] Hash[108] Probes[  1] Key[sponsor         ]
+      Index[109] Hash[109] Probes[  1] Key[Eye             ]
+      Index[110] Hash[110] Probes[  1] Key[toluene         ]
+      Index[111] Empty
+      Index[112] Empty
+      Index[113] Hash[113] Probes[  1] Key[Acevedo         ]
+      Index[114] Hash[113] Probes[  2] Key[dactyl          ]
+      Index[115] Hash[115] Probes[  1] Key[Alcantara       ]
+      Index[116] Hash[116] Probes[  1] Key[Bhandari        ]
+      Index[117] Hash[117] Probes[  1] Key[Fabricate       ]
+      Index[118] Hash[118] Probes[  1] Key[Egbe            ]
+      Index[119] Empty
+      Index[120] Hash[120] Probes[  1] Key[1234567890123456]
+      Index[121] Hash[121] Probes[  1] Key[Batbold         ]
+      Index[122] Hash[120] Probes[  3] Key[Fabulous        ]
+      Index[123] Hash[122] Probes[  2] Key[Syncopate       ]
+      Index[124] Hash[124] Probes[  1] Key[Daniels         ]
+      Index[125] Hash[124] Probes[  2] Key[Charles         ]
+      Index[126] Hash[120] Probes[  7] Key[Yolk            ]
+      Index[127] Hash[121] Probes[  7] Key[Rush            ]
+      Index[128] Empty
+      Theoretically the result should be  5.500 probes to locate key.
+  Random Probe Results
+    Start of 50% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =   5
+          Average Probes =   1.467
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =   8
+          Average Probes =   1.967
+      Index[  1] Empty
+      Index[  2] Hash[  2] Probes[  1] Key[Akhila          ]
+      Index[  3] Hash[124] Probes[  2] Key[Charles         ]
+      Index[  4] Hash[  4] Probes[  1] Key[Carmona         ]
+      Index[  5] Empty
+      Index[  6] Empty
+      Index[  7] Empty
+      Index[  8] Hash[  8] Probes[  1] Key[Clark           ]
+      Index[  9] Hash[  9] Probes[  1] Key[Casper          ]
+      Index[ 10] Empty
+      Index[ 11] Empty
+      Index[ 12] Hash[ 12] Probes[  1] Key[Davies          ]
+      Index[ 13] Hash[ 13] Probes[  1] Key[Jeffrey         ]
+      Index[ 14] Hash[ 14] Probes[  1] Key[James           ]
+      Index[ 15] Hash[ 15] Probes[  1] Key[Clayton         ]
+      Index[ 16] Hash[ 16] Probes[  1] Key[Aguirrie        ]
+      Index[ 17] Hash[ 17] Probes[  1] Key[Maiden          ]
+      Index[ 18] Empty
+      Index[ 19] Hash[ 12] Probes[  2] Key[Derek           ]
+      Index[ 20] Empty
+      Index[ 21] Hash[ 21] Probes[  1] Key[Arauza          ]
+      Index[ 22] Empty
+      Index[ 23] Hash[  9] Probes[  3] Key[Zulfiqar        ]
+      Index[ 24] Empty
+      Index[ 25] Empty
+      Index[ 26] Empty
+      Index[ 27] Empty
+      Index[ 28] Hash[ 28] Probes[  1] Key[Buck            ]
+      Index[ 29] Hash[ 29] Probes[  1] Key[Ellington       ]
+      Index[ 30] Hash[ 23] Probes[  2] Key[Ajose           ]
+      Index[ 31] Empty
+      Index[ 32] Empty
+      Index[ 33] Hash[ 33] Probes[  1] Key[Garza           ]
+      Index[ 34] Empty
+      Index[ 35] Hash[ 21] Probes[  3] Key[Farral          ]
+      Index[ 36] Hash[ 29] Probes[  2] Key[Fernando        ]
+      Index[ 37] Empty
+      Index[ 38] Hash[ 38] Probes[  1] Key[Cook            ]
+      Index[ 39] Empty
+      Index[ 40] Hash[ 40] Probes[  1] Key[Dugger          ]
+      Index[ 41] Empty
+      Index[ 42] Hash[ 35] Probes[  2] Key[Kelly           ]
+      Index[ 43] Empty
+      Index[ 44] Hash[ 44] Probes[  1] Key[Constriction    ]
+      Index[ 45] Hash[ 38] Probes[  2] Key[Corey           ]
+      Index[ 46] Empty
+      Index[ 47] Hash[ 47] Probes[  1] Key[Nienberg        ]
+      Index[ 48] Hash[ 48] Probes[  1] Key[Paschal         ]
+      Index[ 49] Hash[ 21] Probes[  5] Key[Chris           ]
+      Index[ 50] Hash[ 50] Probes[  1] Key[Octavio         ]
+      Index[ 51] Empty
+      Index[ 52] Empty
+      Index[ 53] Empty
+      Index[ 54] Hash[ 54] Probes[  1] Key[Salkowski       ]
+      Index[ 55] Hash[ 55] Probes[  1] Key[Qamruddin       ]
+      Index[ 56] Hash[ 21] Probes[  6] Key[Christopher     ]
+      Index[ 57] Hash[ 57] Probes[  1] Key[Crouch          ]
+      Index[ 58] Empty
+      Index[ 59] Empty
+      Index[ 60] Empty
+      Index[ 61] Hash[ 54] Probes[  2] Key[Lisa            ]
+      Index[ 62] Hash[ 55] Probes[  2] Key[Matthew         ]
+      Index[ 63] Hash[ 35] Probes[  5] Key[Necromancer     ]
+      Index[ 64] Empty
+      Index[ 65] Hash[ 65] Probes[  1] Key[Jordon          ]
+      Index[ 66] Hash[ 66] Probes[  1] Key[Robert          ]
+      Index[ 67] Empty
+      Index[ 68] Hash[ 68] Probes[  1] Key[Joseph          ]
+      Index[ 69] Hash[ 55] Probes[  3] Key[John            ]
+      Index[ 70] Empty
+      Index[ 71] Empty
+      Index[ 72] Hash[ 72] Probes[  1] Key[Misogamist      ]
+      Index[ 73] Empty
+      Index[ 74] Empty
+      Index[ 75] Hash[ 75] Probes[  1] Key[Scott           ]
+      Index[ 76] Hash[ 76] Probes[  1] Key[Judy            ]
+      Index[ 77] Hash[ 77] Probes[  1] Key[Dustin          ]
+      Index[ 78] Empty
+      Index[ 79] Empty
+      Index[ 80] Empty
+      Index[ 81] Empty
+      Index[ 82] Hash[ 33] Probes[  8] Key[Michael         ]
+      Index[ 83] Hash[ 48] Probes[  6] Key[Wade            ]
+      Index[ 84] Hash[ 77] Probes[  2] Key[Todd            ]
+      Index[ 85] Empty
+      Index[ 86] Empty
+      Index[ 87] Empty
+      Index[ 88] Hash[ 88] Probes[  1] Key[Gurung          ]
+      Index[ 89] Hash[ 47] Probes[  7] Key[Joel            ]
+      Index[ 90] Empty
+      Index[ 91] Empty
+      Index[ 92] Empty
+      Index[ 93] Empty
+      Index[ 94] Hash[ 94] Probes[  1] Key[Veronica        ]
+      Index[ 95] Hash[ 88] Probes[  2] Key[Kyle            ]
+      Index[ 96] Empty
+      Index[ 97] Hash[ 97] Probes[  1] Key[Vinnela         ]
+      Index[ 98] Empty
+      Index[ 99] Hash[ 99] Probes[  1] Key[Red             ]
+      Index[100] Empty
+      Index[101] Empty
+      Index[102] Empty
+      Index[103] Empty
+      Index[104] Empty
+      Index[105] Empty
+      Index[106] Hash[ 99] Probes[  2] Key[Adam            ]
+      Index[107] Empty
+      Index[108] Empty
+      Index[109] Hash[109] Probes[  1] Key[Eye             ]
+      Index[110] Empty
+      Index[111] Empty
+      Index[112] Empty
+      Index[113] Hash[113] Probes[  1] Key[Acevedo         ]
+      Index[114] Empty
+      Index[115] Hash[115] Probes[  1] Key[Alcantara       ]
+      Index[116] Hash[116] Probes[  1] Key[Bhandari        ]
+      Index[117] Empty
+      Index[118] Hash[118] Probes[  1] Key[Egbe            ]
+      Index[119] Empty
+      Index[120] Hash[120] Probes[  1] Key[1234567890123456]
+      Index[121] Hash[121] Probes[  1] Key[Batbold         ]
+      Index[122] Hash[122] Probes[  1] Key[Syncopate       ]
+      Index[123] Empty
+      Index[124] Hash[124] Probes[  1] Key[Daniels         ]
+      Index[125] Empty
+      Index[126] Empty
+      Index[127] Hash[120] Probes[  2] Key[Fabulous        ]
+      Index[128] Empty
+      Theoretically the result should be  1.386 probes to locate a key.
+    Start of 90% Full Table
+      First 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  16
+          Average Probes =   4.000
+      Last 30 Key Entries
+          Minimum Probes =   1
+          Maximum Probes =  29
+          Average Probes =   4.133
+      Index[  1] Hash[ 45] Probes[ 13] Key[seal            ]
+      Index[  2] Hash[  2] Probes[  1] Key[Akhila          ]
+      Index[  3] Hash[124] Probes[  2] Key[Charles         ]
+      Index[  4] Hash[  4] Probes[  1] Key[Carmona         ]
+      Index[  5] Empty
+      Index[  6] Hash[120] Probes[  3] Key[Yolk            ]
+      Index[  7] Hash[  7] Probes[  1] Key[Afterwards      ]
+      Index[  8] Hash[  8] Probes[  1] Key[Clark           ]
+      Index[  9] Hash[  9] Probes[  1] Key[Casper          ]
+      Index[ 10] Hash[ 47] Probes[ 14] Key[scat            ]
+      Index[ 11] Hash[ 62] Probes[ 12] Key[noggin          ]
+      Index[ 12] Hash[ 12] Probes[  1] Key[Davies          ]
+      Index[ 13] Hash[ 13] Probes[  1] Key[Jeffrey         ]
+      Index[ 14] Hash[ 14] Probes[  1] Key[James           ]
+      Index[ 15] Hash[ 15] Probes[  1] Key[Clayton         ]
+      Index[ 16] Hash[ 16] Probes[  1] Key[Aguirrie        ]
+      Index[ 17] Hash[ 17] Probes[  1] Key[Maiden          ]
+      Index[ 18] Hash[ 83] Probes[ 10] Key[tiller          ]
+      Index[ 19] Hash[ 12] Probes[  2] Key[Derek           ]
+      Index[ 20] Hash[ 20] Probes[  1] Key[Finagle         ]
+      Index[ 21] Hash[ 21] Probes[  1] Key[Arauza          ]
+      Index[ 22] Empty
+      Index[ 23] Hash[  9] Probes[  3] Key[Zulfiqar        ]
+      Index[ 24] Hash[110] Probes[  7] Key[toluene         ]
+      Index[ 25] Empty
+      Index[ 26] Empty
+      Index[ 27] Hash[ 50] Probes[ 16] Key[marsupial       ]
+      Index[ 28] Hash[ 28] Probes[  1] Key[Buck            ]
+      Index[ 29] Hash[ 29] Probes[  1] Key[Ellington       ]
+      Index[ 30] Hash[ 23] Probes[  2] Key[Ajose           ]
+      Index[ 31] Empty
+      Index[ 32] Empty
+      Index[ 33] Hash[ 33] Probes[  1] Key[Garza           ]
+      Index[ 34] Hash[ 64] Probes[ 15] Key[rationalize     ]
+      Index[ 35] Hash[ 21] Probes[  3] Key[Farral          ]
+      Index[ 36] Hash[ 29] Probes[  2] Key[Fernando        ]
+      Index[ 37] Hash[  9] Probes[  5] Key[cauldron        ]
+      Index[ 38] Hash[ 38] Probes[  1] Key[Cook            ]
+      Index[ 39] Empty
+      Index[ 40] Hash[ 40] Probes[  1] Key[Dugger          ]
+      Index[ 41] Hash[113] Probes[  9] Key[dactyl          ]
+      Index[ 42] Hash[ 35] Probes[  2] Key[Kelly           ]
+      Index[ 43] Empty
+      Index[ 44] Hash[ 44] Probes[  1] Key[Constriction    ]
+      Index[ 45] Hash[ 38] Probes[  2] Key[Corey           ]
+      Index[ 46] Empty
+      Index[ 47] Hash[ 47] Probes[  1] Key[Nienberg        ]
+      Index[ 48] Hash[ 48] Probes[  1] Key[Paschal         ]
+      Index[ 49] Hash[ 21] Probes[  5] Key[Chris           ]
+      Index[ 50] Hash[ 50] Probes[  1] Key[Octavio         ]
+      Index[ 51] Hash[ 44] Probes[  2] Key[parasympathetic ]
+      Index[ 52] Hash[ 38] Probes[  3] Key[Cook            ]
+      Index[ 53] Hash[ 53] Probes[  1] Key[seat            ]
+      Index[ 54] Hash[ 54] Probes[  1] Key[Salkowski       ]
+      Index[ 55] Hash[ 55] Probes[  1] Key[Qamruddin       ]
+      Index[ 56] Hash[ 21] Probes[  6] Key[Christopher     ]
+      Index[ 57] Hash[ 57] Probes[  1] Key[Crouch          ]
+      Index[ 58] Hash[ 51] Probes[  2] Key[cap             ]
+      Index[ 59] Hash[ 52] Probes[  2] Key[forgetful       ]
+      Index[ 60] Hash[ 60] Probes[  1] Key[Honor           ]
+      Index[ 61] Hash[ 54] Probes[  2] Key[Lisa            ]
+      Index[ 62] Hash[ 55] Probes[  2] Key[Matthew         ]
+      Index[ 63] Hash[ 35] Probes[  5] Key[Necromancer     ]
+      Index[ 64] Hash[ 64] Probes[  1] Key[brutalize       ]
+      Index[ 65] Hash[ 65] Probes[  1] Key[Jordon          ]
+      Index[ 66] Hash[ 66] Probes[  1] Key[Robert          ]
+      Index[ 67] Empty
+      Index[ 68] Hash[ 68] Probes[  1] Key[Joseph          ]
+      Index[ 69] Hash[ 55] Probes[  3] Key[John            ]
+      Index[ 70] Hash[100] Probes[ 15] Key[prologue        ]
+      Index[ 71] Hash[ 71] Probes[  1] Key[Irreversible    ]
+      Index[ 72] Hash[ 72] Probes[  1] Key[Misogamist      ]
+      Index[ 73] Hash[ 66] Probes[  2] Key[Screen          ]
+      Index[ 74] Hash[ 74] Probes[  1] Key[Person          ]
+      Index[ 75] Hash[ 75] Probes[  1] Key[Scott           ]
+      Index[ 76] Hash[ 76] Probes[  1] Key[Judy            ]
+      Index[ 77] Hash[ 77] Probes[  1] Key[Dustin          ]
+      Index[ 78] Hash[ 64] Probes[  3] Key[ratiocination   ]
+      Index[ 79] Hash[ 79] Probes[  1] Key[Under           ]
+      Index[ 80] Hash[ 66] Probes[  3] Key[mole            ]
+      Index[ 81] Empty
+      Index[ 82] Hash[ 33] Probes[  8] Key[Michael         ]
+      Index[ 83] Hash[ 48] Probes[  6] Key[Wade            ]
+      Index[ 84] Hash[ 77] Probes[  2] Key[Todd            ]
+      Index[ 85] Hash[ 64] Probes[  4] Key[live            ]
+      Index[ 86] Hash[ 86] Probes[  1] Key[poison          ]
+      Index[ 87] Hash[ 87] Probes[  1] Key[quandary        ]
+      Index[ 88] Hash[ 88] Probes[  1] Key[Gurung          ]
+      Index[ 89] Hash[ 47] Probes[  7] Key[Joel            ]
+      Index[ 90] Hash[ 90] Probes[  1] Key[wince           ]
+      Index[ 91] Hash[ 84] Probes[  2] Key[prepossess      ]
+      Index[ 92] Hash[ 92] Probes[  1] Key[Wine            ]
+      Index[ 93] Hash[ 23] Probes[ 11] Key[magnetic        ]
+      Index[ 94] Hash[ 94] Probes[  1] Key[Veronica        ]
+      Index[ 95] Hash[ 88] Probes[  2] Key[Kyle            ]
+      Index[ 96] Hash[ 61] Probes[  6] Key[Perfect         ]
+      Index[ 97] Hash[ 97] Probes[  1] Key[Vinnela         ]
+      Index[ 98] Hash[ 84] Probes[  3] Key[sparse          ]
+      Index[ 99] Hash[ 99] Probes[  1] Key[Red             ]
+      Index[100] Hash[ 44] Probes[  9] Key[constrain       ]
+      Index[101] Hash[ 94] Probes[  2] Key[Staple          ]
+      Index[102] Hash[102] Probes[  1] Key[orthodontist    ]
+      Index[103] Hash[103] Probes[  1] Key[Jutty           ]
+      Index[104] Hash[ 97] Probes[  2] Key[Northwest       ]
+      Index[105] Hash[ 84] Probes[  4] Key[nosegay         ]
+      Index[106] Hash[ 99] Probes[  2] Key[Adam            ]
+      Index[107] Hash[ 23] Probes[ 13] Key[wet             ]
+      Index[108] Hash[108] Probes[  1] Key[sponsor         ]
+      Index[109] Hash[109] Probes[  1] Key[Eye             ]
+      Index[110] Hash[ 47] Probes[ 10] Key[inlet           ]
+      Index[111] Hash[ 97] Probes[  3] Key[option          ]
+      Index[112] Hash[ 98] Probes[  3] Key[privilege       ]
+      Index[113] Hash[113] Probes[  1] Key[Acevedo         ]
+      Index[114] Hash[ 51] Probes[ 10] Key[guard           ]
+      Index[115] Hash[115] Probes[  1] Key[Alcantara       ]
+      Index[116] Hash[116] Probes[  1] Key[Bhandari        ]
+      Index[117] Hash[117] Probes[  1] Key[Fabricate       ]
+      Index[118] Hash[118] Probes[  1] Key[Egbe            ]
+      Index[119] Hash[ 21] Probes[ 15] Key[ichthyosaur     ]
+      Index[120] Hash[120] Probes[  1] Key[1234567890123456]
+      Index[121] Hash[121] Probes[  1] Key[Batbold         ]
+      Index[122] Hash[122] Probes[  1] Key[Syncopate       ]
+      Index[123] Empty
+      Index[124] Hash[124] Probes[  1] Key[Daniels         ]
+      Index[125] Hash[ 57] Probes[ 29] Key[exhilarate      ]
+      Index[126] Empty
+      Index[127] Hash[120] Probes[  2] Key[Fabulous        ]
+      Index[128] Hash[121] Probes[  2] Key[Rush            ]
+      Theoretically the result should be  2.558 probes to locate a key.

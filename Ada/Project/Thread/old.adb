@@ -1,0 +1,51 @@
+-- -- Start Server
+-- loop
+-- 	--1) Accept A Socket
+--   Accept_Socket (
+--     Server   => Listener_Socket,
+--     Socket   => Client_Socket,
+--     Address  => Client_Address,
+--     Timeout  => Forever,
+--     Selector => S.Accepting_Selector'Access,
+--     Status   => Select_Status
+--   );
+--
+-- 	--2(Exit) When procedure Stop is Called
+--   exit when Select_Status = Aborted;
+--
+-- 	--3(If) Socket Connected then
+--   if Select_Status = Completed then
+--     Put_Line("Client from " & Image(Client_Address));
+--     String'Output(Stream(Client_Socket), "You have connected Successfully.");
+--     Integer'Output(Stream(Client_Socket), 31);
+--     String'Output(Stream(Client_Socket), "Enter a Username");
+--     Integer'Output(Stream(Client_Socket), 16);
+--     --Accept Username
+--     declare
+--       Message: String := String'Input(Stream(Client_Socket));
+--       Length: Integer := Integer'Input(Stream(Client_Socket));
+--       Str: String(1..8);
+--     begin
+--       Str(1..Length) := Message;
+--       Client_Names(1) := Str;
+--       String'Output(Stream(Client_Socket), "Username is now " & Message);
+--       Integer'Output(Stream(Client_Socket), 16+Length);
+--     end;
+--     --Begin Loop
+--     loop
+-- 		  declare
+-- 			  Message: String := String'Input(Stream(Client_Socket));
+--         Length: Integer := Integer'Input(Stream(Client_Socket));
+--       begin
+-- 			  put_line(Message & " [" & Client_Names(1) & "]");
+-- 			  String'Output(Stream(Client_Socket), "Message Recieved");
+--         Integer'Output(Stream(Client_Socket), 16);
+--   	  end;
+-- 	  end loop;
+-- 		Close_Socket (Client_Socket);
+-- 		put_line("Client Socket Closed");
+--   end if;
+-- 	-- End Socket Connection
+-- end loop;
+-- -- End Server
+-- Close_Socket (Listener_Socket);

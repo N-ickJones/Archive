@@ -1,0 +1,98 @@
+/* Style Sheet for Desktop and Laptop Computers */
+html{
+    border: solid black 5px;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    /*<background: url("/static/bkground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+body {
+    margin: auto;
+}
+.main {
+
+}
+.nav {
+    float: top;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.navPane {
+    margin: auto auto 0.7% auto;
+    width: 100%;
+    background: none;
+
+}
+.navPane img {
+    width: 20%;
+}
+.topNav_bar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.topNav_bar li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    background: none;
+
+}
+.topNav_list {
+    margin: auto;
+}
+.topNav_list a {
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+    background: none;
+    text-decoration: none;
+}
+.topNav_list .searchIcon {
+    width: 8%;
+}
+.topNav_list .cartIcon {
+    width: 8%;
+}
+
+.topNav_list .loginButton {
+    border-radius: 10%;
+    padding: 2% 5% 2% 5%;
+    color: white;
+    background: purple;
+}
+/* Start of Block */
+/* End of Block */
+.footer {
+    margin: auto;
+    width: 80%;
+    padding: 1%;
+    background: none;
+}
+.bottomBar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.bottomBar li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    background: none;
+}
+.bottomBar a {
+    font-size: 100%;
+    color: black;
+    background: none;
+    text-decoration: none;
+}

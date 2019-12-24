@@ -1,0 +1,26 @@
+NewBase(3) = 
+(0 + 1 + (0.0 + (0.23 * 20.0 / 3.0) + (1.0 * (0.77 * 30.0 / 17.0)) + (0.77 * 20.0 / 17.0))) + 13 + 
+((0.0 + (0.23 * 20.0 / 3.0) + (1.0 * (0.77 * 30.0 / 17.0))) + (0.23 * 20.0 / 3.0) + (13 * (0.77 * 30.0 / 17.0))) +
+((0.77 * 30.0 / 17.0))
+ 
+ 
+floor(tau)
+
+
+0 + 1 + floor(tau) + growth * beta
+
+			--put(base(j)+1, 3);put(top(j), 3);new_line;
+
+			--put("Tau= ");
+			--put(Sigma);put(" + ");put(Alpha);put(" + ");put(float(Audit(i)));put(" * ");put(Beta);new_line;
+			--put("Tau= ");put(Tau);new_line;
+			--put("NewBase(");put(i,0);put(") = ");
+			--put("NewBase(");put(i-1, 0);put(")=");put(Audit(i-1), 0);put(" + ");put("(Top(");put(i-1, 0);put(") - Base(");put(i-1, 0);put("))=");put(Top(i-1) - Base(i-1), 0);put(" + ");put("floor(Tau)=");put(floor(tau), 0);put(" - ");put("floor(sigma)=");put(floor(Sigma), 0);put("   Tau=");put(tau);put("  Sigma=");put(sigma);new_line;
+      --put("NewBase(");put(i,0);put(") = ");put(audit(i), 0);new_line;
+			
+			put("Alpha= ");
+		put(EqualAllocate);put(" * ");put(float(AvailSpace));put(" / ");put(float(n));new_line;
+			--put(Alpha);new_line;
+			put("Beta= ");
+			put(GrowthAllocate);put(" * ");put(float(AvailSpace));put(" / ");put(float(TotalInc));new_line;
+			--put(Beta);new_line;

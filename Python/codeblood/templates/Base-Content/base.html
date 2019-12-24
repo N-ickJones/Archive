@@ -1,0 +1,42 @@
+<!-- HTML Layout
+Purpose: Garnero Engineering
+Author: Nicholas Jones
+Date: 05/28/2018
+Version: 1.0
+-->
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="{% static 'assets/favicon.ico' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom-css/base.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom-css/topMenu.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom-css/mainMenu.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom-css/bottomMenu.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom-css/loginMenu.css' %}">
+        <link rel="stylesheet" href="{% static 'css/foundation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+        <title>CodeBlood</title>
+    </head>
+
+    <body>
+
+    {% include 'Base-Content/TopMenu/topMenu.html' %}
+    {% include 'Base-Content/MainMenu/mainMenu.html' %}
+    {#% include 'Base-Content/BottomMenu/bottomMenu.html' %#}
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static 'jQuery/jquery.min.js' %}" ></script>
+    <script src="{% static 'jQuery/jquery.min.js' %}" ></script>
+    <script src="{% static 'js/custom-js/base.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.js' %}"></script>
+    <script src="{% static 'js/vendor/what-input.js' %}"></script>
+    <script src="{% static 'js/vendor/foundation.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+    </body>
+</html>

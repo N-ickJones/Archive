@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Enabled while Editing -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller1Main">
+   <children>
+                                                                                                                                                                                                 <!-- fx:controller="Application.MainController" -->
+   
+                     <MenuBar prefHeight="25.0" prefWidth="1024.0">
+                                                                                                                                                                                                    <menus>
+      
+         
+                               <Menu mnemonicParsing="false" text="File">
+         <items>
+         
+               
+                                         <MenuItem fx:id="newMenuItem" mnemonicParsing="false" onAction="#newCheckScreen" text="New" />
+                                       <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#openCheckScreen" text="Open" />
+                                       <MenuItem fx:id="saveMenuItem" disable="true" mnemonicParsing="false" onAction="#saveAction" text="Save" />
+                                       <MenuItem fx:id="saveAsMenuItem" mnemonicParsing="false" onAction="#saveAsAction" text="Save As..." />
+                                       <MenuItem fx:id="quitMenuItem" mnemonicParsing="false" onAction="#quitAction" text="Quit" />
+         </items>
+      
+         
+                               </Menu>
+                         <Menu mnemonicParsing="false" text="Edit" />
+                         <Menu mnemonicParsing="false" text="Help" />
+                                                                                                                                                                                                    </menus>
+   
+               </MenuBar>
+   
+            <VBox layoutY="30.0" prefHeight="144.0" prefWidth="728.0">
+      <children>
+      
+                        <HBox prefHeight="17.0" prefWidth="710.0">
+         <children>
+         
+                  
+                                    <Label contentDisplay="CENTER" text="Academic Year" textAlignment="CENTER">
+                                       <HBox.margin>
+                                          <Insets left="32.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Current Semester" textAlignment="CENTER">
+                                       <HBox.margin>
+                                          <Insets right="53.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets left="8.0" right="8.1" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="GPA Hours">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                              <padding>
+                                 <Insets left="3.0" right="3.0" />
+                              </padding>
+                                    </Label>
+                                    <Label text="Quality Points">
+                                       <HBox.margin>
+                                          <Insets right="19.0" />
+                                       </HBox.margin>
+                              <padding>
+                                 <Insets left="6.0" right="6.0" />
+                              </padding>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Current GPA" textAlignment="CENTER">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label text="Academic Status">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+         </children>
+      
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="25.0">
+                           <children>
+         
+                  
+                                    <ComboBox fx:id="academicYear" prefWidth="78.0">
+                                       <HBox.margin>
+                                          <Insets left="32.0" right="20.0" />
+                                       </HBox.margin>
+                  
+                                                    <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="2018" />
+                                                <String fx:value="2019" />
+                                                <String fx:value="2020" />
+                                            </FXCollections>
+                                        </items>
+                  
+                                                </ComboBox>
+                                    <ComboBox fx:id="semester" onAction="#setSemester" prefWidth="109.0">
+                                       <HBox.margin>
+                                          <Insets right="53.0" />
+                                       </HBox.margin>
+                  
+                                                    <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="Spring" />
+                                                <String fx:value="Fall" />
+                                                <String fx:value="SummerI" />
+                                                <String fx:value="SummerII" />
+                                                <String fx:value="Winter" />
+                                            </FXCollections>
+                                        </items>
+                  
+                                                </ComboBox>
+                                    <TextField fx:id="gpaHours" onAction="#setGpaHours" onKeyTyped="#setGpaHours" prefWidth="64.0">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="qualityPoints" onAction="#setQualityPoints" onKeyTyped="#setQualityPoints" prefWidth="64.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button fx:id="qualityPointsButton" mnemonicParsing="false" onAction="#setQualityPointsHelperScene" text="?">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <TextField fx:id="currentGPA" onAction="#setCurrentGPA" onKeyTyped="#setCurrentGPA" prefWidth="64.0">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label fx:id="academicStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #d9d9d9;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="academicGrade" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="20.0" style="-fx-background-color: #d9d9d9;">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                           </children>
+      
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+            
+            
+                        <Pane prefHeight="73.0" prefWidth="1024.0">
+               <children>
+         
+                  
+                                    <VBox prefHeight="54.0" prefWidth="271.0">
+            <children>
+            
+                        
+                                                <HBox>
+               <children>
+               
+                              
+                                                            <TextField fx:id="classNameBox" alignment="CENTER" onAction="#setClassName" onKeyTyped="#setClassName" promptText="Class Name" />
+                                                            <TextField fx:id="classCreditHours" onAction="#setClassCreditHours" onKeyTyped="#setClassCreditHours" prefHeight="25.0" prefWidth="83.0" promptText="Credit Hours" />
+                                                            <Button fx:id="addButton" mnemonicParsing="false" text="Add" />
+               </children>
+            
+                                                </HBox>
+                                                <HBox prefHeight="20.0">
+                                                   <children>
+               
+                              
+                                                            <ComboBox fx:id="classSelectionBox" onAction="#setClassSelectionBox" prefWidth="232.0">
+                                                                <items>
+                                                                    <FXCollections fx:factory="observableArrayList">
+
+                                                                    </FXCollections>
+                                                                </items>
+                                                            </ComboBox>
+                                                            <Button fx:id="goButton" mnemonicParsing="false" text=" Go " />
+                                                   </children>
+            
+                        
+                                                </HBox>
+            </children>
+         
+                              <padding>
+                                 <Insets top="20.0" />
+                              </padding>
+                  
+                                    </VBox>
+                                    <HBox layoutX="286.0" prefHeight="73.0" prefWidth="169.0">
+                                       <children>
+            
+                                                <ProgressIndicator fx:id="gpaHoursProgress" prefHeight="67.0" prefWidth="66.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" right="28.0" />
+                                                   </HBox.margin>
+                                       <tooltip>
+                                          <Tooltip text="Percentage until Graduation" />
+                                       </tooltip>
+                                                </ProgressIndicator>
+                        
+                                                <ProgressIndicator fx:id="qualityPointsProgress" prefHeight="67.0" prefWidth="66.0" progress="0.0">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                       <tooltip>
+                                          <Tooltip text="\% of Possible Quality Points" />
+                                       </tooltip>
+                                                </ProgressIndicator>
+                                       </children>
+         
+                  
+                                    </HBox>
+               </children>
+      
+            
+                        </Pane>
+      </children>
+   
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+      
+            </VBox>
+      
+             <!-- Start of GridPane -->
+            <Pane layoutX="14.0" layoutY="185.0" prefHeight="368.0" prefWidth="979.0">
+         <children>
+      
+            
+                        <GridPane layoutX="16.0" prefHeight="343.0" prefWidth="932.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="90.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="0.0" prefWidth="90.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="0.0" prefWidth="40.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="0.0" prefWidth="40.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="40.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+         <children>
+         
+                  
+                  
+                                     <Label fx:id="classNameLabel" text="[Class Name]" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                           </Label>
+                                     <Label alignment="CENTER" contentDisplay="CENTER" text="[Name of Criteria]" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                           </Label>
+                                     <Label alignment="CENTER" contentDisplay="CENTER" text="[Weight]" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                           </Label>
+                                     <Label alignment="CENTER" contentDisplay="CENTER" text="[Total Points]" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                         <font>
+                                 <Font name="System Bold" size="10.0" />
+                              </font>
+                           </Label>
+                                     <Label alignment="CENTER" contentDisplay="CENTER" text="[Points Earned]" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                         <font>
+                                 <Font name="System Bold" size="9.0" />
+                              </font>
+                           </Label>
+                  
+                                     <!-- Start of Graded Criteria Rows -->
+                                     <!-- Row 1 -->
+                                     <Label text="Graded Criteria 1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria1" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                     <TextField fx:id="weight1" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                     <TextField fx:id="totalPoints1" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                     <Label fx:id="pointsEarned1" alignment="CENTER" contentDisplay="CENTER" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem11" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem21" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem31" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem41" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem51" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem61" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem71" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem81" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem91" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+                                     <TextField fx:id="criteriaItem101" alignment="CENTER" onAction="#pointsEarned1" onKeyTyped="#pointsEarned1" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+                  
+                                     <!-- Row 2 -->
+                                     <Label text="Graded Criteria 2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria2" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                     <TextField fx:id="weight2" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                     <TextField fx:id="totalPoints2" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                     <Label fx:id="pointsEarned2" alignment="CENTER" layoutX="374.0" layoutY="72.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem12" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem22" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem32" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem42" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem52" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem62" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem72" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem82" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem92" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+                                     <TextField fx:id="criteriaItem102" alignment="CENTER" onAction="#pointsEarned2" onKeyTyped="#pointsEarned2" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+                  
+                                     <!-- Row 3 -->
+                                     <Label text="Graded Criteria 3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria3" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                     <TextField fx:id="weight3" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                     <TextField fx:id="totalPoints3" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                     <Label fx:id="pointsEarned3" alignment="CENTER" layoutX="374.0" layoutY="100.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem13" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem23" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem33" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem43" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem53" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem63" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem73" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem83" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem93" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+                                     <TextField fx:id="criteriaItem103" alignment="CENTER" onAction="#pointsEarned3" onKeyTyped="#pointsEarned3" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+                  
+                                     <!-- Row 4 -->
+                                     <Label text="Graded Criteria 4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria4" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                     <TextField fx:id="weight4" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                     <TextField fx:id="totalPoints4" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                     <Label fx:id="pointsEarned4" alignment="CENTER" layoutX="374.0" layoutY="128.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem14" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem24" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem34" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem44" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem54" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem64" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem74" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem84" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem94" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+                                     <TextField fx:id="criteriaItem104" alignment="CENTER" onAction="#pointsEarned4" onKeyTyped="#pointsEarned4" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+                  
+                                     <!-- Row 5 -->
+                                     <Label text="Graded Criteria 5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria5" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                     <TextField fx:id="weight5" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                     <TextField fx:id="totalPoints5" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                     <Label fx:id="pointsEarned5" alignment="CENTER" layoutX="374.0" layoutY="156.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem15" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem25" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem35" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem45" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem55" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem65" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem75" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem85" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem95" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+                                     <TextField fx:id="criteriaItem105" alignment="CENTER" onAction="#pointsEarned5" onKeyTyped="#pointsEarned5" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+                  
+                                     <!-- Row 6 -->
+                                     <Label text="Graded Criteria 6" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria6" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                     <TextField fx:id="weight6" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                     <TextField fx:id="totalPoints6" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                     <Label fx:id="pointsEarned6" alignment="CENTER" layoutX="374.0" layoutY="156.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem16" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem26" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem36" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem46" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem56" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem66" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem76" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem86" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem96" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+                                     <TextField fx:id="criteriaItem106" alignment="CENTER" onAction="#pointsEarned6" onKeyTyped="#pointsEarned6" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="7" />
+                  
+                                     <!-- Row 7 -->
+                                     <Label text="Graded Criteria 7" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria7" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                     <TextField fx:id="weight7" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                     <TextField fx:id="totalPoints7" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                     <Label fx:id="pointsEarned7" alignment="CENTER" layoutX="374.0" layoutY="214.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem17" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem27" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem37" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem47" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem57" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem67" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem77" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem87" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem97" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+                                     <TextField fx:id="criteriaItem107" alignment="CENTER" onAction="#pointsEarned7" onKeyTyped="#pointsEarned7" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+                  
+                                     <!-- Row 8 -->
+                                     <Label text="Graded Criteria 8" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria8" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                     <TextField fx:id="weight8" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                     <TextField fx:id="totalPoints8" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                     <Label fx:id="pointsEarned8" alignment="CENTER" layoutX="374.0" layoutY="243.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem18" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem28" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem38" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem48" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem58" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem68" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem78" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem88" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem98" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+                                     <TextField fx:id="criteriaItem108" alignment="CENTER" onAction="#pointsEarned8" onKeyTyped="#pointsEarned8" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="9" />
+                  
+                                     <!-- Row 9 -->
+                                     <Label text="Graded Criteria 9" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteria9" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                     <TextField fx:id="weight9" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                     <TextField fx:id="totalPoints9" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                                     <Label fx:id="pointsEarned9" alignment="CENTER" layoutX="374.0" layoutY="272.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem19" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem29" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem39" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem49" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem59" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem69" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem79" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem89" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem99" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="10" />
+                                     <TextField fx:id="criteriaItem109" alignment="CENTER" onAction="#pointsEarned9" onKeyTyped="#pointsEarned9" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="10" />
+                  
+                                     <!-- Row 10 -->
+                                     <Label text="Graded Criteria 10" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+                                       <padding>
+                                          <Insets left="6.0" />
+                                       </padding>
+                           </Label>
+                                     <TextField fx:id="criteria10" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                     <TextField fx:id="weight10" alignment="CENTER" onAction="#calculateGrade" onKeyTyped="#calculateGrade" promptText="\%" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                     <TextField fx:id="totalPoints10" onAction="#calculateGrade" onKeyTyped="#calculateGrade" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                     <Label fx:id="pointsEarned10" alignment="CENTER" layoutX="374.0" layoutY="301.0" text="0.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+                                     <TextField fx:id="criteriaItem110" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item1" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem210" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item2" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem310" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item3" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem410" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item4" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem510" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item5" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem610" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item6" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem710" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item7" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem810" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item8" GridPane.columnIndex="12" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem910" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item9" GridPane.columnIndex="13" GridPane.rowIndex="11" />
+                                     <TextField fx:id="criteriaItem1010" alignment="CENTER" onAction="#pointsEarned10" onKeyTyped="#pointsEarned10" promptText="item10" GridPane.columnIndex="14" GridPane.rowIndex="11" />
+                  <Label fx:id="creditHoursLabel" text="  " GridPane.columnIndex="1" />
+         </children>
+      
+            
+            
+                        </GridPane>
+         </children>
+   
+      
+            </Pane>
+            <Pane layoutX="4.0" layoutY="536.0" prefHeight="230.0" prefWidth="1017.0">
+               <children>
+      
+            
+                        <Label layoutX="329.0" layoutY="20.0" prefHeight="37.0" prefWidth="133.0" text="Projected GPA">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="8.0" layoutY="106.0" prefHeight="123.0" prefWidth="908.0" text="1. Enter the Name of the Graded Criteria.                                 Ex. Exam1, Assignments, Daily Grades, Lab Grade&#10;2. Enter the Weight of the Graded Criteria.                               Ex. 25 (25% out of 100%)&#10;3. Enter the Total Points Available within the Graded Criteria.  Ex. 200 points available for Assignments ( 4 items 50 points each)&#10;4. Fill in items as your recieve the grades throughout the semester. You don't have to enter anything in the extra item boxes.&#10;*Extra Credit - to add it make sure you double the weight. ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                  </TextArea>
+                        <Label layoutX="48.0" layoutY="25.0" text="Current Grade">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ProgressIndicator fx:id="currentGradeProgress" layoutX="168.0" layoutY="10.0" prefHeight="82.0" prefWidth="98.0" progress="0.0" />
+                        <Label fx:id="projectedGPA" alignment="CENTER" layoutX="477.0" layoutY="12.0" prefHeight="54.0" prefWidth="109.0" style="-fx-background-color: #d9d9d9;">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+               </children>
+   
+      
+            </Pane>
+         <Canvas fx:id="canvas" height="200.0" layoutX="733.0" layoutY="34.0" width="210.0" />
+   </children>
+
+</Pane>

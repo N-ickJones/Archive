@@ -1,0 +1,90 @@
+
+
+##Start Setup--------------------------------------------------------------------
+
+
+#Create a Profile
+"Add" web: gunicorn bootcamp.wsgi --log-file -
+"Where" bootcamp = Project Name;
+
+
+# Create requirements.txt
+cd /ProjectDirectory
+pip freeze > requirements.txt
+pip install -r requirements.txt.
+
+
+# Create runtime.txt
+"Add" python-3.6.5
+
+"Quick way" 
+cat runtime.txt
+python-3.6.5
+
+#Setup Static Assets
+
+"Add"(below) to settings.py @ bottom
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
+
+"Next" Install white noise and update requirements.txt
+
+pip install whitenoise
+whitenoise==3.3.1
+
+"Next" Add the Whitenoise to Django application in the wsgi.py file:
+
+import os
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bootcamp.settings")
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
+
+"Update" Settings.py
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+## Start Deployment------------------------------------------------------------
+
+#(Optional) clone an Existing remote repository to local
+git clone https://github.com/vitorfs/bootcamp.git && cd bootcamp
+
+# Login
+heroku login
+
+# Change to Project Directory & Create heroku app
+cd /ProjectDirectory
+heroku create appName
+
+# Add a PostgreSQL database to your app:
+
+heroku addons:create heroku-postgresql:hobby-dev
+
+#Now go to heroku.com and access you app
+#Click on the Settings menu and then on the button Reveal Config Vars:
+
+
+
+
+
+Secret Key: 't-)y2h_$p*m=f$#7579%&6h$c))y&^g2ftsdq30o(cd3zd+eym'
+
+https://garneroengineering.herokuapp.com/ | https://git.heroku.com/garneroengineering.git
+
+
+
+

@@ -1,0 +1,65 @@
+; Nicholas Jones COSC 2329 01
+; My name and Initials in NASM assembly
+; Note: To assemble "nasm -fbin file.acm -o file.com"
+
+
+	org 100h
+
+section .text
+
+start:
+	mov 	dx,msg			; get name message
+	mov 	ah, 9			; display string function
+	int 	21h				; display message
+
+	mov 	dx,msg2			; ask for initials input
+	mov 	ah, 9			; display string function
+	int 	21h				; display message
+
+	mov 	ah, 1			; read char function
+	int 	21h				; input char into al
+	mov 	[char1], al		; store char in al to char1
+
+	mov 	ah, 1			; read char function
+	int 	21h				; input char into al
+	mov 	[char2], al		; store char in al to char2
+
+	mov 	ah, 1			; read char function
+	int 	21h				; input char into al
+	mov 	[char3], al		; store char in al to char3
+
+	mov 	dx, newline		; make a new line
+	mov 	ah, 9			; display string function
+	int 	21h				; display new line
+
+	mov 	dx, char1		; get char1 message
+	mov 	ah, 9			; display string function
+	int 	21h				; display char1 message
+
+	mov 	dx, newline		; make a new line
+	mov 	ah, 9			; display string function
+	int 	21h				; display new line
+
+	mov 	dx, char2		; get char2 message
+	mov 	ah, 9			; display string function
+	int 	21h				; display char2 message
+
+	mov 	dx, newline		; make a new line
+	mov 	ah, 9			; display string function
+	int 	21h				; display new line
+
+	mov 	dx, char3		; get char3 message
+	mov 	ah, 9			; display string function
+	int 	21h				; display char3 message
+
+	mov 	ah, 4Ch			; Dos function: exit program
+	mov 	al, 0			; return exit code value
+	int 	21h				; Call Dos & Terminate program
+
+section .data
+msg:	db  "Nicholas Jones", 0Dh, 0Ah, '$'
+msg2:	db	"Please Enter Your Initials :", '$'
+newline:db	0Dh, 0ah, '$'
+char1:	db	' ', '$'
+char2:	db	' ', '$'
+char3:	db	' ', '$'

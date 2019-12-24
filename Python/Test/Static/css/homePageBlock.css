@@ -1,0 +1,44 @@
+/* Style For Default Page
+
+Purpose: Garnero Engineering
+Author: Nicholas Jones
+Date: 05/28/2018
+Version: 1.0
+*/
+
+.block .blockContainer{
+    width: 100%;
+}
+.blockContainer h3{
+    font-size: 120%;
+    text-align: center;
+}
+
+.sideBar ul{
+
+}
+.sideBar li {
+
+}
+.sideBar ul > li > a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 125%;
+}
+.outdoorProjects {
+
+}
+.sideBar {
+
+}
+.sideBar img{
+
+}
+#link {
+
+
+}
+
+

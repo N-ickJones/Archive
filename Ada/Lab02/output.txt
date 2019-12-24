@@ -1,0 +1,146 @@
+Report for Management [B-Option]
+
+PUSH STACK 1 David
+PUSH STACK 1 Joe
+PUSH STACK 1 Bob
+PUSH STACK 1 Devin
+PUSH STACK 1 Elwin
+PUSH STACK 3 Sagar
+PUSH STACK 3 Ryan
+POP  STACK 1 Elwin
+PUSH STACK 2 Kyle
+PUSH STACK 2 Tyler
+PUSH STACK 2 Minh
+PUSH STACK 3 Adrian
+PUSH STACK 3 Daniel
+PUSH STACK 3 Jailene
+PUSH STACK 2 Jacob
+POP  STACK 1 Devin
+POP  STACK 1 Bob
+POP  STACK 1 Joe
+PUSH STACK 2 Bryce
+PUSH STACK 2 Ryan
+PUSH STACK 2 Jaylene
+PUSH STACK 2 Sagar
+PUSH STACK 2 Ayran
+PUSH STACK 2 Travis
+PUSH STACK 2 Devin
+POP  STACK 3 Jailene
+POP  STACK 3 Daniel
+PUSH STACK 2 Rahul
+PUSH STACK 2 Elwin
+
+OVERFLOW OCCURED WITH Elwin INTO STACK 2
+CONTENT BEFORE REALLOCATION
+Base(1)= 0 Top(1)= 1 OldTop(1)= 0
+( 1)David
+Base(2)=12 Top(2)=24 OldTop(2)=12
+(13)Kyle
+(14)Tyler
+(15)Minh
+(16)Jacob
+(17)Bryce
+(18)Ryan
+(19)Jaylene
+(20)Sagar
+(21)Ayran
+(22)Travis
+(23)Devin
+(24)Rahul
+Base(3)=24 Top(3)=27 OldTop(3)=24
+(25)Sagar
+(26)Ryan
+(27)Adrian
+
+CONTENT AFTER REPACKING
+Base(1)= 0 Top(1)= 1 OldTop(1)= 1
+( 1)David
+Base(2)= 3 Top(2)=16 OldTop(2)=16
+( 4)Kyle
+( 5)Tyler
+( 6)Minh
+( 7)Jacob
+( 8)Bryce
+( 9)Ryan
+(10)Jaylene
+(11)Sagar
+(12)Ayran
+(13)Travis
+(14)Devin
+(15)Rahul
+(16)Elwin
+Base(3)=28 Top(3)=31 OldTop(3)=31
+(29)Sagar
+(30)Ryan
+(31)Adrian
+
+PUSH STACK 2 Victor
+PUSH STACK 3 Corey
+PUSH STACK 3 Bipin
+PUSH STACK 3 Frank
+PUSH STACK 3 Nathan
+PUSH STACK 3 Amber
+PUSH STACK 3 Amy
+PUSH STACK 3 No
+
+OVERFLOW OCCURED WITH No INTO STACK 3
+CONTENT BEFORE REALLOCATION
+Base(1)= 0 Top(1)= 1 OldTop(1)= 1
+( 1)David
+Base(2)= 3 Top(2)=17 OldTop(2)=16
+( 4)Kyle
+( 5)Tyler
+( 6)Minh
+( 7)Jacob
+( 8)Bryce
+( 9)Ryan
+(10)Jaylene
+(11)Sagar
+(12)Ayran
+(13)Travis
+(14)Devin
+(15)Rahul
+(16)Elwin
+(17)Victor
+Base(3)=28 Top(3)=37 OldTop(3)=31
+(29)Sagar
+(30)Ryan
+(31)Adrian
+(32)Corey
+(33)Bipin
+(34)Frank
+(35)Nathan
+(36)Amber
+(37)Amy
+
+CONTENT AFTER REPACKING
+Base(1)= 0 Top(1)= 1 OldTop(1)= 1
+( 1)David
+Base(2)= 1 Top(2)=15 OldTop(2)=15
+( 2)Kyle
+( 3)Tyler
+( 4)Minh
+( 5)Jacob
+( 6)Bryce
+( 7)Ryan
+( 8)Jaylene
+( 9)Sagar
+(10)Ayran
+(11)Travis
+(12)Devin
+(13)Rahul
+(14)Elwin
+(15)Victor
+Base(3)=17 Top(3)=27 OldTop(3)=27
+(18)Sagar
+(19)Ryan
+(20)Adrian
+(21)Corey
+(22)Bipin
+(23)Frank
+(24)Nathan
+(25)Amber
+(26)Amy
+(27)No
+
+PUSH STACK 3 Hope

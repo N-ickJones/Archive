@@ -1,0 +1,259 @@
+/* Style Sheet for Default Layout
+
+Purpose: Garnero Engineering
+Author: Nicholas Jones
+Date: 05/28/2018
+Version: 1.0
+ */
+
+html{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: auto;
+    /*<background: url("/static/bkground.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+body {
+    margin: auto;
+}
+.defaultPage {
+
+}
+.main {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+#top_Tools {
+    display: flex;
+    margin: 1% 5% 2% 5%; /*top right bottom left*/
+}
+.logo {
+    flex: 1;
+    padding: 0 0 0 0;
+ }
+.logo img {
+    width: 50%;
+}
+
+/*Start of Join Large */
+
+.join_Large {
+    flex: 1;
+    padding: 0 0 0 0;
+}
+.join_Large > ul {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 500%;
+}
+.join_Large li {
+    flex: 1;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    text-align: center;
+
+}
+.join_Large li *{
+
+}
+.join_Large li > a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Start of Join Small */
+.join_Small {
+    display: block;
+    padding: 0 0 0 0;
+}
+.join_Small > ul {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 100%;
+
+}
+.join_Small li {
+    flex: 1;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    text-align: center;
+
+}
+.join_Small li *{
+
+}
+.join_Small li > a{
+    text-decoration: none;
+    color: black;
+
+}
+.cartIcon{ /*Both*/
+    width: 15%;
+
+}
+/*End Join Small */
+
+.search {
+    display: flex;
+    width: 100%;
+}
+.search > input {
+    flex: 1;
+    max-width: 80%;
+    text-align: center;
+    border: 1px solid black;
+}
+.search > button {
+    width: 20%;
+}
+.searchBox:hover {
+    background-color: red;
+}
+.searchIcon{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+#topNav {
+    margin: auto auto 0.7% auto;
+    width: 80%;
+    background: none;
+}
+.topNav_bar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.topNav_bar li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    background: none;
+    width: 15%;
+
+}
+.topNav_list {
+    margin: auto;
+    text-align: center;
+    width: auto;
+}
+.topNav_list a {
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+    background: none;
+    text-decoration: none;
+}
+.topNav_list .searchIcon {
+    width: 8%;
+}
+.topNav_list .cartIcon {
+    width: 8%;
+}
+.topNav_list .signInButton {
+    border-radius: 10%;
+    padding: 2% 5% 2% 5%;
+    color: white;
+    background: purple;
+}
+
+/*This is changes for 860 or below */
+
+#dropDown {
+    display: block;
+    width: 20%;
+}
+#dropDownIcon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dropButton {
+    background-color: darkorange;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.dropButton:hover, .dropButton:focus {
+    background-color: dodgerblue;
+}
+
+#dropDown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropDown-content > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropDown > a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+/* Start of Block */
+/* End of Block */
+
+
+.footerNavPane {
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+}
+.footerNav {
+    margin: 0.7% auto auto auto;
+    width: 80%;
+    background: none;
+}
+.footerNav_Bar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.footerNav_Bar li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    background: none;
+}
+.footerNav_Bar a {
+    font-size: 120%;
+    color: black;
+    background: none;
+    text-decoration: none;
+    font-weight: bold;
+}

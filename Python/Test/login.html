@@ -1,0 +1,29 @@
+{% extends 'HomePage/layout.html' %}
+{% load static %}
+{% block content %}
+    <!-- Starts Content for Home Page -->
+
+<link rel="stylesheet" type="text/css" href="{% static 'loginBlock.css' %}">
+
+<div id="block">
+
+    <h3>
+        3D Store & More.<br>
+        Low Prices & Fast Shipping
+    </h3>
+
+    <form method="post">
+
+        Username:<br>
+        <input type="text" name="username"><br>
+
+        Password:<br>
+        <input type="password" name="password">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+{% endblock %}

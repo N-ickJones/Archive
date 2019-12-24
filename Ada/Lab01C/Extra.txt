@@ -1,0 +1,20 @@
+--ada.text_IO.Put("Enter a filename: ");
+   	--declare
+    --  S : String := Ada.Text_IO.Get_Line;
+   	--begin
+    --  Ada.Text_IO.Put_Line (S);
+   	--end;
+	--new_line;
+	
+		--put_line(filename(1..len));		--Test User Input **Remove
+for i in 1..4 loop
+		put("Enter an integer: ");
+		get(m);
+		push(m);
+	end loop;
+	
+	for i in 1..4 loop
+		put("Result of pop: ");
+		pop(m);
+		put(m); new_line;
+	end loop;

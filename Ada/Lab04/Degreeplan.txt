@@ -1,0 +1,50 @@
+Time SLot = 08:00AM Monday April 08th
+
+Math
+	Calculus II -> MATH 1430 4 Credits
+	Statistics  -> MATH 3379 3 Credits --6 --6
+	Extra       -> 3000/4000 3 Credits
+
+CS
+	S. Engineer -> COSC 4319 3 Credits --6 --12
+	Prof & ethic-> COSC 4349 3 Credits
+
+Info Assurance
+	Crypt       -> COSC 3316 3 Credits
+	Arch        -> COSC 3327 3 Credits --9 --21
+	Info Sec    -> COSC 4317 3 Credits
+
+-- 33(After Spring2019) - 21(Degree) = 12 Credit Electives
+
+Fall 2019
+	Computer Science
+		Computer Architecture - Wei - MWF 10:00AM to 10:50AM 82782 (2) X
+		--Data Mining						- Cho - MWF 08:00AM to 08:50AM 82865 (NA)
+		Software Engineering  - Bur - MWF 08:00AM to 08:50AM 82744 (1) X
+		Professional & Ethics - Les - TR  09:30AM to 10:45AM 82863 (3) X
+		Numerical Methods - 11:00am to 12:15Pm Unknown 82813 (7)
+
+	MATH
+		Calculus II - (MW - 11:00am to 11:50am TR - 11:00am to 12:15PM) - Hay 80976
+		Calculus II - MWF - 02:00PM to 03:15PM - Mel 80976 (4)
+		Calculus II - MWF - 03:30PM to 04:45PM - Mel 80981
+		Statistics - TR 11:00AM - 12:15AM w/Kafle
+		Statistics - TR
+		Statistics - TR
+		Intro to Linear Alg - MW 03:30PM to 4:45PM - Hay 81002 (6)
+
+Target Schedule 16 -- 17 left
+	MWF
+		08:00AM - 08:50AM Software Engineering  w/Burris
+		10:00AM - 10:50AM Computer Architecture w/Wei
+		02:00PM - 03:15PM Calculus II           w/Mel
+	MW
+		--03:30PM - 04:45PM Linear ALgebra        w/Hay --Maybe--
+	TR
+		09:30AM - 10:45AM Professionalism & Ethics
+		11:00AM - 12:15PM Statistics            w/Kafle
+
+Left - 9
+	Crypt
+	Arch
+	Info Sec

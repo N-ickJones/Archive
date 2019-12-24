@@ -1,0 +1,427 @@
+with ada.text_io; use ada.text_io;
+with lab02;
+--with VSTRINGS.A;
+
+procedure uLab02 is
+
+  package intIO is new ada.text_io.integer_io(integer); use intIO;
+  
+  value: integer := 0;
+  --Lo, m, n, low, high: integer := 0;
+	Lo: integer := 1; m: integer := 37; n: integer := 3;
+	low: integer := -11; high: integer := 60;
+	outputFile: file_type;
+	-- Attempt MyString
+	type MyString is record
+		len: integer;
+		rec: String(1..10);
+	end record;
+	procedure putS(outputFile: in out file_type;x: MyString) is 
+	begin 
+		Put(outputFile, x.rec(1..x.len)); 
+		
+	end;
+	--function thisImage(Item : in My_Type) return Item.rec(1..Item.len);
+	
+	-- End Attempt MyString
+	
+	
+	procedure readIn(outputFile: in out file_type) is
+		inputFile: File_Type;
+		package stack is new lab02(MyString, putS, Lo, m, n, low, high, outputFile);
+		a: character;
+		b: integer;
+		c: integer;
+		s: String(1..10);
+		st: MyString;
+	begin
+		open(inputFile, In_File, "input.txt");
+		create(outputFile, OUT_File, "output.txt");
+		stack.build;
+		put(outputFile, "Report for Management");put_line(outputFile, "");put_line(outputFile, "");
+		c := 1;
+    while not End_Of_File(inputFile) loop
+      get(inputFile, a);
+      if a = 'I' then
+				get(inputFile, b);
+				get(inputFile, a);
+				loop
+					get(inputFile, a);
+					if a = ',' then
+						c := c - 1;
+						exit;
+					elsif End_Of_File(inputFile) then
+						--put(a);
+						s(c) := a;
+						exit;
+					else
+						--put(a);
+						s(c) := a;
+						c := c + 1;
+					end if;
+				end loop;
+				st.len := c;
+				st.rec(1..st.len) := s(1..st.len);
+				put(outputFile, "PUSH STACK");put(outputFile, b, 2);put(outputFile, " " & st.rec(1..st.len));put_line(outputFile, "");
+				stack.push(st, b);
+				--put(st.rec(1..st.len));new_line;
+				c := 1;
+			elsif a = 'D' then
+				get(inputFile, b); --int
+				--put(b, 0);new_line;
+				stack.pop(st, b);
+				put(outputFile, "POP  STACK");put(outputFile, b, 2);put(outputFile, " " & st.rec(1..st.len));put_line(outputFile, "");
+				--put("POP ");put(st.rec(1..st.len));new_line;
+			end if;
+    end loop;
+		close(inputFile);
+		close(outputFile);
+	end readIn;
+	
+
+begin
+
+  -- Divide the stack
+  --put("What's the starting memory location?");new_line;
+  --get(Lo);
+  -- Lo := Lo + 1;
+  --put("What's the max length?");new_line;
+  --get(m);
+  --put("What's the stack count?");new_line;
+  --get(n);
+  --put("What's the lower bound?");new_line;
+  --get(low);
+  --put("What's the upper bound?");new_line;
+  --get(high);
+  --Lo:=0+1;m:=37;n:=3;low:=-11;high:=60;
+  --runTest;
+  --TODO Read In
+	ReadIn(outputFile);
+	
+	
+
+  
+
+end uLab02;
+
+
+
+--Filename:  dataStack.adb
+--Author:    Nicholas Jones
+--Date:	     02/11/2019
+--Purpose:   To allocate and use stack memory with circular queue
+--Version:   1.0
+--Reference: Dr. Burris Notes
+
+package body lab02 is
+
+  package intIO is new Ada.Text_IO.Integer_IO(integer); use intIO;
+  package floatIO is new Ada.Text_IO.Float_IO(float); use floatIO;
+
+  Stack: array(low_bound..high_bound) of object;
+  Top: array(0..n) of integer;
+  Base: array(0..n + 1) of integer;
+
+  --TODO Combine into one stack
+    OldTop: array(0..n) of integer; --
+    Growth: array(0..n) of integer; --
+    NewBase: array(0..n + 1) of integer; --
+	-- END TODO
+
+  procedure build is
+  begin
+    for i in 1..n loop
+      Base(i) := floor(float(i - 1) / float(n) * float(m)) + Lo;
+      Top(i) := Base(i);
+      OldTop(i) := Top(i);
+    end loop;
+    Base(n + 1) := m;
+  end build;
+	
+	
+
+  procedure push(input: in object; k: in integer) is
+  begin
+    Top(k) := Top(k) + 1;
+    if Top(k) > Base(k + 1) then
+      put_line(fOut, "");put(fOut, "OVERFLOW OCCURED");put_line(fOut, "");
+			put(fOut, "CONTENT BEFORE REALLOCATION");put_line(fOut, "");
+			top(k) := top(k) - 1;
+			print_content;
+			top(k) := top(k) + 1;
+      find_space;
+      top(k) := top(k) - 1;
+      move_stack;
+      top(k) := top(k) + 1;
+      Stack(top(k)) := input;
+      for i in 1..n loop
+        OldTop(i) := Top(i);
+      end loop;
+			put(fOut, "CONTENT AFTER REPACKING");put_line(fOut, "");
+			print_content;
+    else
+      Stack(top(k)) := input;
+    end if;
+  end push;
+
+  procedure pop(output: out object; k: in integer) is
+  begin
+    if Top(k) = Base(k) then
+      put(fOut, "UNDERFLOW OCCURED");new_line;
+    else
+      output := Stack(Top(k));
+      top(k) := top(k) - 1;
+    end if;
+  end pop;
+
+  procedure find_space is
+    AvailSpace: integer := m - Lo;
+    t: integer := n;
+    EqualAllocate: float := 0.23;
+    GrowthAllocate: float := 1.0 - EqualAllocate;
+    Alpha, Beta, Tau, Sigma: float := 0.0;
+    TotalInc: integer := 0;
+    MinSpace: float := float(m) * 0.1;
+  begin
+    while t > 0 loop
+      AvailSpace := AvailSpace - (Top(t) - Base(t));
+      if Top(t) > OldTop(t) then
+        Growth(t) := Top(t) - OldTop(t);
+        TotalInc := TotalInc + Growth(t);
+      else
+        Growth(t) := 0;
+      end if;
+      t := t - 1;
+    end loop;
+    if float(AvailSpace) < (MinSpace - 1.0) then
+			put(fOut, "--Insufficient Memory for Repacking--");
+      raise PROGRAM_ERROR with "Insufficient Memory for Repacking";
+    end if;
+    Alpha := EqualAllocate * float(AvailSpace) / float(n);
+    Beta := GrowthAllocate * float(AvailSpace) / float(TotalInc);
+    NewBase(1) := Base(1);
+    for i in 2..n loop
+      Tau := Sigma + Alpha + float(Growth(i-1)) * Beta;
+      NewBase(i) := NewBase(i-1) + ( top(i-1) - Base(i-1) ) +
+                        integer(float'floor(tau)) - integer(float'floor(Sigma));
+      Sigma := Tau;
+    end loop;
+  end find_space;
+
+  procedure move_stack is
+    T: integer;
+  begin
+    for i in 2..n loop
+      if NewBase(i) < Base(i) then
+        T := Base(i) - NewBase(i);
+        for L in Base(i)..top(i) loop
+          Stack(L-T) := Stack(L);
+        end loop;
+        Base(i) := NewBase(i);
+        Top(i) := top(i) - T;
+      end if;
+    end loop;
+    for i in reverse 2..n loop
+      if NewBase(i) > Base(i) then
+        T := NewBase(i) - Base(i);
+        for L in reverse Base(i)+1..Top(i) loop
+          Stack(L + T) := Stack(L);
+        end loop;
+        Base(i) := NewBase(i);
+        Top(i) := top(i) + T;
+      end if;
+    end loop;
+  end move_stack;
+	
+	procedure print_content is
+	begin
+		for j in 1..n loop
+			put(fOut, "Base(");put(fOut, j, 0); put(fOut, ")=");put(fOut, Base(j), 2);
+			put(fOut, " Top(");put(fOut, j, 0); put(fOut, ")=");put(fOut, Top(j), 2);
+			put(fOut, " OldTop(");put(fOut, j, 0); put(fOut, ")=");put(fOut, OldTop(j), 2);
+			put_line(fOut, "");
+			for k in base(j) + 1..top(j) loop
+				put(fOut,"(");
+				put(fOut, k, 2);
+				put(fOut, ")");
+				putObject(fOut, Stack(k));
+				put_line(fOut, "");
+			end loop;
+		end loop;
+		put_line(fOut, "");
+	end print_content;
+	
+	function floor(x: float) return integer is 
+		t: integer;
+	begin
+		t := integer(x);
+		if float(t) <= x then
+			return t;
+		else
+			return t - 1;
+		end if;
+	end;
+
+end lab02;
+
+
+
+
+--Filename:  dataStack.adb
+--Author:    Nicholas Jones
+--Date:	     02/11/2019
+--Purpose:   To allocate and use stack memory with circular queue
+--Version:   1.0
+--Reference: Dr. Burris Notes
+
+package body lab02 is
+
+  package intIO is new Ada.Text_IO.Integer_IO(integer); use intIO;
+  package floatIO is new Ada.Text_IO.Float_IO(float); use floatIO;
+
+  Stack: array(low_bound..high_bound) of object;
+  Top: array(0..n) of integer;
+  Base: array(0..n + 1) of integer;
+
+  --TODO Combine into one stack
+    OldTop: array(0..n) of integer; --
+    Growth: array(0..n) of integer; --
+    NewBase: array(0..n + 1) of integer; --
+	-- END TODO
+
+  procedure build is
+  begin
+    for i in 1..n loop
+      Base(i) := floor(float(i - 1) / float(n) * float(m)) + Lo;
+      Top(i) := Base(i);
+      OldTop(i) := Top(i);
+    end loop;
+    Base(n + 1) := m;
+  end build;
+	
+  procedure push(input: in object; k: in integer) is
+  begin
+    Top(k) := Top(k) + 1;
+    if Top(k) > Base(k + 1) then
+      put_line(fOut, "");put(fOut, "OVERFLOW OCCURED");put_line(fOut, "");
+			put(fOut, "CONTENT BEFORE REALLOCATION");put_line(fOut, "");
+			top(k) := top(k) - 1;
+			print_content;
+			top(k) := top(k) + 1;
+      find_space;
+      top(k) := top(k) - 1;
+      move_stack;
+      top(k) := top(k) + 1;
+      Stack(top(k)) := input;
+      for i in 1..n loop
+        OldTop(i) := Top(i);
+      end loop;
+			put(fOut, "CONTENT AFTER REPACKING");put_line(fOut, "");
+			print_content;
+    else
+      Stack(top(k)) := input;
+    end if;
+  end push;
+
+  procedure pop(output: out object; k: in integer) is
+  begin
+    if Top(k) = Base(k) then
+      put(fOut, "UNDERFLOW OCCURED");new_line;
+    else
+      output := Stack(Top(k));
+      top(k) := top(k) - 1;
+    end if;
+  end pop;
+
+  procedure find_space is
+    AvailSpace: integer := m - Lo;
+    t: integer := n;
+    EqualAllocate: float := 0.23;
+    GrowthAllocate: float := 1.0 - EqualAllocate;
+    Alpha, Beta, Tau, Sigma: float := 0.0;
+    TotalInc: integer := 0;
+    MinSpace: float := float(m) * 0.1;
+  begin
+    while t > 0 loop
+      AvailSpace := AvailSpace - (Top(t) - Base(t));
+      if Top(t) > OldTop(t) then
+        Growth(t) := Top(t) - OldTop(t);
+        TotalInc := TotalInc + Growth(t);
+      else
+        Growth(t) := 0;
+      end if;
+      t := t - 1;
+    end loop;
+    if float(AvailSpace) < (MinSpace - 1.0) then
+			put(fOut, "--Insufficient Memory for Repacking--");
+      raise PROGRAM_ERROR with "Insufficient Memory for Repacking";
+    end if;
+    Alpha := EqualAllocate * float(AvailSpace) / float(n);
+    Beta := GrowthAllocate * float(AvailSpace) / float(TotalInc);
+    NewBase(1) := Base(1);
+    for i in 2..n loop
+      Tau := Sigma + Alpha + float(Growth(i-1)) * Beta;
+      NewBase(i) := NewBase(i-1) + (top(i-1) - Base(i-1)) + floor(tau) - floor(Sigma);
+      Sigma := Tau;
+    end loop;
+  end find_space;
+
+  procedure move_stack is
+    T: integer;
+  begin
+		--Getting Extra
+    for i in 2..n loop
+      if NewBase(i) < Base(i) then
+        T := Base(i) - NewBase(i);
+        for L in Base(i)+1..top(i) loop
+					putObject(fOut, Stack(L));put(fOut, " into ");put(fOut, L-T, 1);put_line(fOut, "");
+          Stack(L-T) := Stack(L);
+        end loop;
+        Base(i) := NewBase(i);
+        Top(i) := top(i) - T;
+      end if;
+    end loop;
+		
+    for i in reverse 2..n loop
+      if NewBase(i) > Base(i) then
+        T := NewBase(i) - Base(i);
+        for L in reverse Base(i)+1..Top(i) loop
+					--putObject(fOut, Stack(L+T));putObject(fOut, Stack(L));new_line;
+          Stack(L + T) := Stack(L);
+        end loop;
+        Base(i) := NewBase(i);
+        Top(i) := top(i) + T;
+      end if;
+    end loop;
+  end move_stack;
+	
+	procedure print_content is
+	begin
+		for j in 1..n loop
+			put(fOut, "Base(");put(fOut, j, 0); put(fOut, ")=");put(fOut, Base(j), 2);
+			put(fOut, " Top(");put(fOut, j, 0); put(fOut, ")=");put(fOut, Top(j), 2);
+			put(fOut, " OldTop(");put(fOut, j, 0); put(fOut, ")=");put(fOut, OldTop(j), 2);
+			put_line(fOut, "");
+			for k in base(j) + 1..top(j) loop
+				put(fOut,"(");
+				put(fOut, k, 2);
+				put(fOut, ")");
+				putObject(fOut, Stack(k));
+				put_line(fOut, "");
+			end loop;
+		end loop;
+		put_line(fOut, "");
+	end print_content;
+	
+	function floor(x: float) return integer is 
+		t: integer;
+	begin
+		t := integer(x);
+		if float(t) <= x then
+			return t;
+		else
+			return t - 1;
+		end if;
+	end;
+
+end lab02;

@@ -1,0 +1,815 @@
+#/bin/bash
+#author	:Nicholas Jones
+#date   :4/19/2018
+#purpose:To Organize and parse a Network security Log
+
+mkdir reportByDay
+mkdir reportByDay/Day1
+mkdir reportByDay/Day2
+mkdir reportByDay/Day3
+mkdir reportByDay/Day4
+mkdir reportByDay/Day5
+mkdir reportByDay/Day6
+mkdir reportByDay/Day7
+mkdir reportByDay/Day8
+mkdir reportByDay/Day9
+mkdir reportByDay/Day10
+mkdir reportByDay/Day11
+mkdir reportByDay/Day12
+mkdir reportByDay/Day13
+mkdir reportByDay/Day14
+mkdir reportByDay/Day15
+mkdir reportByDay/Day16
+mkdir reportByDay/Day17
+mkdir reportByDay/Day18
+mkdir reportByDay/Day19
+mkdir reportByDay/Day20
+mkdir reportByDay/Day21
+mkdir reportByDay/Day22
+mkdir reportByDay/Day23
+mkdir reportByDay/Day24
+mkdir reportByDay/Day25
+mkdir reportByDay/Day26
+mkdir reportByDay/Day27
+mkdir reportByDay/Day28
+mkdir reportByDay/Day29
+mkdir reportByDay/Day30
+mkdir reportByDay/Day31
+
+grep "May  1 " NetworkTraffic.log > reportByDay/Day1/Day1.txt
+grep "May  2 " NetworkTraffic.log > reportByDay/Day2/Day2.txt
+grep "May  3 " NetworkTraffic.log > reportByDay/Day3/Day3.txt
+grep "May  4 " NetworkTraffic.log > reportByDay/Day4/Day4.txt
+grep "May  5 " NetworkTraffic.log > reportByDay/Day5/Day5.txt
+grep "May  6 " NetworkTraffic.log > reportByDay/Day6/Day6.txt
+grep "May  7 " NetworkTraffic.log > reportByDay/Day7/Day7.txt
+grep "May  8 " NetworkTraffic.log > reportByDay/Day8/Day8.txt
+grep "May  9 " NetworkTraffic.log > reportByDay/Day9/Day9.txt
+grep "May 10 " NetworkTraffic.log > reportByDay/Day10/Day10.txt
+grep "May 11 " NetworkTraffic.log > reportByDay/Day11/Day11.txt
+grep "May 12 " NetworkTraffic.log > reportByDay/Day12/Day12.txt
+grep "May 13 " NetworkTraffic.log > reportByDay/Day13/Day13.txt
+grep "May 14 " NetworkTraffic.log > reportByDay/Day14/Day14.txt
+grep "May 15 " NetworkTraffic.log > reportByDay/Day15/Day15.txt
+grep "May 16 " NetworkTraffic.log > reportByDay/Day16/Day16.txt
+grep "May 17 " NetworkTraffic.log > reportByDay/Day17/Day17.txt
+grep "May 18 " NetworkTraffic.log > reportByDay/Day18/Day18.txt
+grep "May 19 " NetworkTraffic.log > reportByDay/Day19/Day19.txt
+grep "May 20 " NetworkTraffic.log > reportByDay/Day20/Day20.txt
+grep "May 21 " NetworkTraffic.log > reportByDay/Day21/Day21.txt
+grep "May 22 " NetworkTraffic.log > reportByDay/Day22/Day22.txt
+grep "May 23 " NetworkTraffic.log > reportByDay/Day23/Day23.txt
+grep "May 24 " NetworkTraffic.log > reportByDay/Day24/Day24.txt
+grep "May 25 " NetworkTraffic.log > reportByDay/Day25/Day25.txt
+grep "May 26 " NetworkTraffic.log > reportByDay/Day26/Day26.txt
+grep "May 27 " NetworkTraffic.log > reportByDay/Day27/Day27.txt
+grep "May 28 " NetworkTraffic.log > reportByDay/Day28/Day28.txt
+grep "May 29 " NetworkTraffic.log > reportByDay/Day29/Day29.txt
+grep "May 30 " NetworkTraffic.log > reportByDay/Day30/Day30.txt
+grep "May 31 " NetworkTraffic.log > reportByDay/Day31/Day31.txt
+
+grep "SPT=21" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_21.txt
+grep "SPT=3024" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_3024.txt
+grep "SPT=4092" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_4092.txt
+grep "SPT=5472" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_5472.txt
+grep "SPT=1255" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1255.txt
+grep "SPT=1777" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1777.txt
+grep "SPT=1011" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1011.txt
+grep "SPT=1012" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1012.txt
+grep "SPT=1013" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1013.txt
+grep "SPT=1014" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1014.txt
+grep "SPT=2345" reportByDay/Day1/Day1.txt > reportByDay/Day1/Day1_1015.txt
+
+wc -l reportByDay/Day1/Day1_21.txt > report.txt
+wc -l reportByDay/Day1/Day1_3024.txt >> report.txt
+wc -l reportByDay/Day1/Day1_4092.txt >> report.txt
+wc -l reportByDay/Day1/Day1_5472.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1255.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1777.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1011.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1012.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1013.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1014.txt >> report.txt
+wc -l reportByDay/Day1/Day1_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_21.txt
+grep "SPT=3024" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_3024.txt
+grep "SPT=4092" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_4092.txt
+grep "SPT=5472" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_5472.txt
+grep "SPT=1255" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1255.txt
+grep "SPT=1777" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1777.txt
+grep "SPT=1011" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1011.txt
+grep "SPT=1012" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1012.txt
+grep "SPT=1013" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1013.txt
+grep "SPT=1014" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1014.txt
+grep "SPT=2345" reportByDay/Day2/Day2.txt > reportByDay/Day2/Day2_1015.txt
+
+wc -l reportByDay/Day2/Day2_21.txt >> report.txt
+wc -l reportByDay/Day2/Day2_3024.txt >> report.txt
+wc -l reportByDay/Day2/Day2_4092.txt >> report.txt
+wc -l reportByDay/Day2/Day2_5472.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1255.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1777.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1011.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1012.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1013.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1014.txt >> report.txt
+wc -l reportByDay/Day2/Day2_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_21.txt
+grep "SPT=3024" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_3024.txt
+grep "SPT=4092" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_4092.txt
+grep "SPT=5472" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_5472.txt
+grep "SPT=1255" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1255.txt
+grep "SPT=1777" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1777.txt
+grep "SPT=1011" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1011.txt
+grep "SPT=1012" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1012.txt
+grep "SPT=1013" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1013.txt
+grep "SPT=1014" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1014.txt
+grep "SPT=2345" reportByDay/Day3/Day3.txt > reportByDay/Day3/Day3_1015.txt
+
+wc -l reportByDay/Day3/Day3_21.txt >> report.txt
+wc -l reportByDay/Day3/Day3_3024.txt >> report.txt
+wc -l reportByDay/Day3/Day3_4092.txt >> report.txt
+wc -l reportByDay/Day3/Day3_5472.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1255.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1777.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1011.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1012.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1013.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1014.txt >> report.txt
+wc -l reportByDay/Day3/Day3_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_21.txt
+grep "SPT=3024" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_3024.txt
+grep "SPT=4092" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_4092.txt
+grep "SPT=5472" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_5472.txt
+grep "SPT=1255" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1255.txt
+grep "SPT=1777" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1777.txt
+grep "SPT=1011" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1011.txt
+grep "SPT=1012" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1012.txt
+grep "SPT=1013" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1013.txt
+grep "SPT=1014" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1014.txt
+grep "SPT=2345" reportByDay/Day4/Day4.txt > reportByDay/Day4/Day4_1015.txt
+
+wc -l reportByDay/Day4/Day4_21.txt >> report.txt
+wc -l reportByDay/Day4/Day4_3024.txt >> report.txt
+wc -l reportByDay/Day4/Day4_4092.txt >> report.txt
+wc -l reportByDay/Day4/Day4_5472.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1255.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1777.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1011.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1012.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1013.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1014.txt >> report.txt
+wc -l reportByDay/Day4/Day4_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_21.txt
+grep "SPT=3024" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_3024.txt
+grep "SPT=4092" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_4092.txt
+grep "SPT=5472" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_5472.txt
+grep "SPT=1255" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1255.txt
+grep "SPT=1777" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1777.txt
+grep "SPT=1011" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1011.txt
+grep "SPT=1012" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1012.txt
+grep "SPT=1013" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1013.txt
+grep "SPT=1014" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1014.txt
+grep "SPT=2345" reportByDay/Day5/Day5.txt > reportByDay/Day5/Day5_1015.txt
+
+wc -l reportByDay/Day5/Day5_21.txt >> report.txt
+wc -l reportByDay/Day5/Day5_3024.txt >> report.txt
+wc -l reportByDay/Day5/Day5_4092.txt >> report.txt
+wc -l reportByDay/Day5/Day5_5472.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1255.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1777.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1011.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1012.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1013.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1014.txt >> report.txt
+wc -l reportByDay/Day5/Day5_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_21.txt
+grep "SPT=3024" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_3024.txt
+grep "SPT=4092" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_4092.txt
+grep "SPT=5472" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_5472.txt
+grep "SPT=1255" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1255.txt
+grep "SPT=1777" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1777.txt
+grep "SPT=1011" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1011.txt
+grep "SPT=1012" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1012.txt
+grep "SPT=1013" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1013.txt
+grep "SPT=1014" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1014.txt
+grep "SPT=2345" reportByDay/Day6/Day6.txt > reportByDay/Day6/Day6_1015.txt
+
+wc -l reportByDay/Day6/Day6_21.txt >> report.txt
+wc -l reportByDay/Day6/Day6_3024.txt >> report.txt
+wc -l reportByDay/Day6/Day6_4092.txt >> report.txt
+wc -l reportByDay/Day6/Day6_5472.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1255.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1777.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1011.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1012.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1013.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1014.txt >> report.txt
+wc -l reportByDay/Day6/Day6_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_21.txt
+grep "SPT=3024" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_3024.txt
+grep "SPT=4092" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_4092.txt
+grep "SPT=5472" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_5472.txt
+grep "SPT=1255" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1255.txt
+grep "SPT=1777" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1777.txt
+grep "SPT=1011" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1011.txt
+grep "SPT=1012" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1012.txt
+grep "SPT=1013" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1013.txt
+grep "SPT=1014" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1014.txt
+grep "SPT=2345" reportByDay/Day7/Day7.txt > reportByDay/Day7/Day7_1015.txt
+
+wc -l reportByDay/Day7/Day7_21.txt >> report.txt
+wc -l reportByDay/Day7/Day7_3024.txt >> report.txt
+wc -l reportByDay/Day7/Day7_4092.txt >> report.txt
+wc -l reportByDay/Day7/Day7_5472.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1255.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1777.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1011.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1012.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1013.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1014.txt >> report.txt
+wc -l reportByDay/Day7/Day7_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_21.txt
+grep "SPT=3024" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_3024.txt
+grep "SPT=4092" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_4092.txt
+grep "SPT=5472" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_5472.txt
+grep "SPT=1255" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1255.txt
+grep "SPT=1777" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1777.txt
+grep "SPT=1011" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1011.txt
+grep "SPT=1012" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1012.txt
+grep "SPT=1013" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1013.txt
+grep "SPT=1014" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1014.txt
+grep "SPT=2345" reportByDay/Day8/Day8.txt > reportByDay/Day8/Day8_1015.txt
+
+wc -l reportByDay/Day8/Day8_21.txt >> report.txt
+wc -l reportByDay/Day8/Day8_3024.txt >> report.txt
+wc -l reportByDay/Day8/Day8_4092.txt >> report.txt
+wc -l reportByDay/Day8/Day8_5472.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1255.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1777.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1011.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1012.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1013.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1014.txt >> report.txt
+wc -l reportByDay/Day8/Day8_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_21.txt
+grep "SPT=3024" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_3024.txt
+grep "SPT=4092" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_4092.txt
+grep "SPT=5472" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_5472.txt
+grep "SPT=1255" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1255.txt
+grep "SPT=1777" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1777.txt
+grep "SPT=1011" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1011.txt
+grep "SPT=1012" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1012.txt
+grep "SPT=1013" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1013.txt
+grep "SPT=1014" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1014.txt
+grep "SPT=2345" reportByDay/Day9/Day9.txt > reportByDay/Day9/Day9_1015.txt
+
+wc -l reportByDay/Day9/Day9_21.txt >> report.txt
+wc -l reportByDay/Day9/Day9_3024.txt >> report.txt
+wc -l reportByDay/Day9/Day9_4092.txt >> report.txt
+wc -l reportByDay/Day9/Day9_5472.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1255.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1777.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1011.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1012.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1013.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1014.txt >> report.txt
+wc -l reportByDay/Day9/Day9_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_21.txt
+grep "SPT=3024" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_3024.txt
+grep "SPT=4092" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_4092.txt
+grep "SPT=5472" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_5472.txt
+grep "SPT=1255" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1255.txt
+grep "SPT=1777" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1777.txt
+grep "SPT=1011" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1011.txt
+grep "SPT=1012" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1012.txt
+grep "SPT=1013" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1013.txt
+grep "SPT=1014" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1014.txt
+grep "SPT=2345" reportByDay/Day10/Day10.txt > reportByDay/Day10/Day10_1015.txt
+
+wc -l reportByDay/Day10/Day10_21.txt >> report.txt
+wc -l reportByDay/Day10/Day10_3024.txt >> report.txt
+wc -l reportByDay/Day10/Day10_4092.txt >> report.txt
+wc -l reportByDay/Day10/Day10_5472.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1255.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1777.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1011.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1012.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1013.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1014.txt >> report.txt
+wc -l reportByDay/Day10/Day10_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_21.txt
+grep "SPT=3024" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_3024.txt
+grep "SPT=4092" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_4092.txt
+grep "SPT=5472" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_5472.txt
+grep "SPT=1255" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1255.txt
+grep "SPT=1777" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1777.txt
+grep "SPT=1011" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1011.txt
+grep "SPT=1012" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1012.txt
+grep "SPT=1013" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1013.txt
+grep "SPT=1014" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1014.txt
+grep "SPT=2345" reportByDay/Day11/Day11.txt > reportByDay/Day11/Day11_1015.txt
+
+wc -l reportByDay/Day11/Day11_21.txt >> report.txt
+wc -l reportByDay/Day11/Day11_3024.txt >> report.txt
+wc -l reportByDay/Day11/Day11_4092.txt >> report.txt
+wc -l reportByDay/Day11/Day11_5472.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1255.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1777.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1011.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1012.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1013.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1014.txt >> report.txt
+wc -l reportByDay/Day11/Day11_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_21.txt
+grep "SPT=3024" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_3024.txt
+grep "SPT=4092" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_4092.txt
+grep "SPT=5472" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_5472.txt
+grep "SPT=1255" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1255.txt
+grep "SPT=1777" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1777.txt
+grep "SPT=1011" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1011.txt
+grep "SPT=1012" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1012.txt
+grep "SPT=1013" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1013.txt
+grep "SPT=1014" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1014.txt
+grep "SPT=2345" reportByDay/Day12/Day12.txt > reportByDay/Day12/Day12_1015.txt
+
+wc -l reportByDay/Day12/Day12_21.txt >> report.txt
+wc -l reportByDay/Day12/Day12_3024.txt >> report.txt
+wc -l reportByDay/Day12/Day12_4092.txt >> report.txt
+wc -l reportByDay/Day12/Day12_5472.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1255.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1777.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1011.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1012.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1013.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1014.txt >> report.txt
+wc -l reportByDay/Day12/Day12_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_21.txt
+grep "SPT=3024" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_3024.txt
+grep "SPT=4092" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_4092.txt
+grep "SPT=5472" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_5472.txt
+grep "SPT=1255" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1255.txt
+grep "SPT=1777" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1777.txt
+grep "SPT=1011" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1011.txt
+grep "SPT=1012" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1012.txt
+grep "SPT=1013" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1013.txt
+grep "SPT=1014" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1014.txt
+grep "SPT=2345" reportByDay/Day13/Day13.txt > reportByDay/Day13/Day13_1015.txt
+
+wc -l reportByDay/Day13/Day13_21.txt >> report.txt
+wc -l reportByDay/Day13/Day13_3024.txt >> report.txt
+wc -l reportByDay/Day13/Day13_4092.txt >> report.txt
+wc -l reportByDay/Day13/Day13_5472.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1255.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1777.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1011.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1012.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1013.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1014.txt >> report.txt
+wc -l reportByDay/Day13/Day13_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_21.txt
+grep "SPT=3024" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_3024.txt
+grep "SPT=4092" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_4092.txt
+grep "SPT=5472" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_5472.txt
+grep "SPT=1255" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1255.txt
+grep "SPT=1777" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1777.txt
+grep "SPT=1011" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1011.txt
+grep "SPT=1012" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1012.txt
+grep "SPT=1013" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1013.txt
+grep "SPT=1014" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1014.txt
+grep "SPT=2345" reportByDay/Day14/Day14.txt > reportByDay/Day14/Day14_1015.txt
+
+wc -l reportByDay/Day14/Day14_21.txt >> report.txt
+wc -l reportByDay/Day14/Day14_3024.txt >> report.txt
+wc -l reportByDay/Day14/Day14_4092.txt >> report.txt
+wc -l reportByDay/Day14/Day14_5472.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1255.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1777.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1011.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1012.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1013.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1014.txt >> report.txt
+wc -l reportByDay/Day14/Day14_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_21.txt
+grep "SPT=3024" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_3024.txt
+grep "SPT=4092" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_4092.txt
+grep "SPT=5472" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_5472.txt
+grep "SPT=1255" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1255.txt
+grep "SPT=1777" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1777.txt
+grep "SPT=1011" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1011.txt
+grep "SPT=1012" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1012.txt
+grep "SPT=1013" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1013.txt
+grep "SPT=1014" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1014.txt
+grep "SPT=2345" reportByDay/Day15/Day15.txt > reportByDay/Day15/Day15_1015.txt
+
+wc -l reportByDay/Day15/Day15_21.txt >> report.txt
+wc -l reportByDay/Day15/Day15_3024.txt >> report.txt
+wc -l reportByDay/Day15/Day15_4092.txt >> report.txt
+wc -l reportByDay/Day15/Day15_5472.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1255.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1777.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1011.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1012.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1013.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1014.txt >> report.txt
+wc -l reportByDay/Day15/Day15_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_21.txt
+grep "SPT=3024" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_3024.txt
+grep "SPT=4092" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_4092.txt
+grep "SPT=5472" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_5472.txt
+grep "SPT=1255" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1255.txt
+grep "SPT=1777" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1777.txt
+grep "SPT=1011" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1011.txt
+grep "SPT=1012" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1012.txt
+grep "SPT=1013" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1013.txt
+grep "SPT=1014" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1014.txt
+grep "SPT=2345" reportByDay/Day16/Day16.txt > reportByDay/Day16/Day16_1015.txt
+
+wc -l reportByDay/Day16/Day16_21.txt >> report.txt
+wc -l reportByDay/Day16/Day16_3024.txt >> report.txt
+wc -l reportByDay/Day16/Day16_4092.txt >> report.txt
+wc -l reportByDay/Day16/Day16_5472.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1255.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1777.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1011.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1012.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1013.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1014.txt >> report.txt
+wc -l reportByDay/Day16/Day16_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_21.txt
+grep "SPT=3024" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_3024.txt
+grep "SPT=4092" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_4092.txt
+grep "SPT=5472" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_5472.txt
+grep "SPT=1255" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1255.txt
+grep "SPT=1777" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1777.txt
+grep "SPT=1011" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1011.txt
+grep "SPT=1012" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1012.txt
+grep "SPT=1013" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1013.txt
+grep "SPT=1014" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1014.txt
+grep "SPT=2345" reportByDay/Day17/Day17.txt > reportByDay/Day17/Day17_1015.txt
+
+wc -l reportByDay/Day17/Day17_21.txt >> report.txt
+wc -l reportByDay/Day17/Day17_3024.txt >> report.txt
+wc -l reportByDay/Day17/Day17_4092.txt >> report.txt
+wc -l reportByDay/Day17/Day17_5472.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1255.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1777.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1011.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1012.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1013.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1014.txt >> report.txt
+wc -l reportByDay/Day17/Day17_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_21.txt
+grep "SPT=3024" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_3024.txt
+grep "SPT=4092" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_4092.txt
+grep "SPT=5472" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_5472.txt
+grep "SPT=1255" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1255.txt
+grep "SPT=1777" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1777.txt
+grep "SPT=1011" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1011.txt
+grep "SPT=1012" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1012.txt
+grep "SPT=1013" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1013.txt
+grep "SPT=1014" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1014.txt
+grep "SPT=2345" reportByDay/Day18/Day18.txt > reportByDay/Day18/Day18_1015.txt
+
+wc -l reportByDay/Day18/Day18_21.txt >> report.txt
+wc -l reportByDay/Day18/Day18_3024.txt >> report.txt
+wc -l reportByDay/Day18/Day18_4092.txt >> report.txt
+wc -l reportByDay/Day18/Day18_5472.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1255.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1777.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1011.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1012.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1013.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1014.txt >> report.txt
+wc -l reportByDay/Day18/Day18_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_21.txt
+grep "SPT=3024" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_3024.txt
+grep "SPT=4092" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_4092.txt
+grep "SPT=5472" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_5472.txt
+grep "SPT=1255" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1255.txt
+grep "SPT=1777" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1777.txt
+grep "SPT=1011" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1011.txt
+grep "SPT=1012" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1012.txt
+grep "SPT=1013" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1013.txt
+grep "SPT=1014" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1014.txt
+grep "SPT=2345" reportByDay/Day19/Day19.txt > reportByDay/Day19/Day19_1015.txt
+
+wc -l reportByDay/Day19/Day19_21.txt >> report.txt
+wc -l reportByDay/Day19/Day19_3024.txt >> report.txt
+wc -l reportByDay/Day19/Day19_4092.txt >> report.txt
+wc -l reportByDay/Day19/Day19_5472.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1255.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1777.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1011.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1012.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1013.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1014.txt >> report.txt
+wc -l reportByDay/Day19/Day19_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_21.txt
+grep "SPT=3024" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_3024.txt
+grep "SPT=4092" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_4092.txt
+grep "SPT=5472" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_5472.txt
+grep "SPT=1255" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1255.txt
+grep "SPT=1777" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1777.txt
+grep "SPT=1011" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1011.txt
+grep "SPT=1012" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1012.txt
+grep "SPT=1013" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1013.txt
+grep "SPT=1014" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1014.txt
+grep "SPT=2345" reportByDay/Day20/Day20.txt > reportByDay/Day20/Day20_1015.txt
+
+wc -l reportByDay/Day20/Day20_21.txt >> report.txt
+wc -l reportByDay/Day20/Day20_3024.txt >> report.txt
+wc -l reportByDay/Day20/Day20_4092.txt >> report.txt
+wc -l reportByDay/Day20/Day20_5472.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1255.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1777.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1011.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1012.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1013.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1014.txt >> report.txt
+wc -l reportByDay/Day20/Day20_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_21.txt
+grep "SPT=3024" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_3024.txt
+grep "SPT=4092" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_4092.txt
+grep "SPT=5472" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_5472.txt
+grep "SPT=1255" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1255.txt
+grep "SPT=1777" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1777.txt
+grep "SPT=1011" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1011.txt
+grep "SPT=1012" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1012.txt
+grep "SPT=1013" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1013.txt
+grep "SPT=1014" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1014.txt
+grep "SPT=2345" reportByDay/Day21/Day21.txt >> reportByDay/Day21/Day21_1015.txt
+
+wc -l reportByDay/Day21/Day21_21.txt >> report.txt
+wc -l reportByDay/Day21/Day21_3024.txt >> report.txt
+wc -l reportByDay/Day21/Day21_4092.txt >> report.txt
+wc -l reportByDay/Day21/Day21_5472.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1255.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1777.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1011.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1012.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1013.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1014.txt >> report.txt
+wc -l reportByDay/Day21/Day21_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_21.txt
+grep "SPT=3024" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_3024.txt
+grep "SPT=4092" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_4092.txt
+grep "SPT=5472" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_5472.txt
+grep "SPT=1255" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1255.txt
+grep "SPT=1777" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1777.txt
+grep "SPT=1011" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1011.txt
+grep "SPT=1012" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1012.txt
+grep "SPT=1013" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1013.txt
+grep "SPT=1014" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1014.txt
+grep "SPT=2345" reportByDay/Day22/Day22.txt > reportByDay/Day22/Day22_1015.txt
+
+wc -l reportByDay/Day22/Day22_21.txt >> report.txt
+wc -l reportByDay/Day22/Day22_3024.txt >> report.txt
+wc -l reportByDay/Day22/Day22_4092.txt >> report.txt
+wc -l reportByDay/Day22/Day22_5472.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1255.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1777.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1011.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1012.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1013.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1014.txt >> report.txt
+wc -l reportByDay/Day22/Day22_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_21.txt
+grep "SPT=3024" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_3024.txt
+grep "SPT=4092" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_4092.txt
+grep "SPT=5472" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_5472.txt
+grep "SPT=1255" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1255.txt
+grep "SPT=1777" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1777.txt
+grep "SPT=1011" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1011.txt
+grep "SPT=1012" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1012.txt
+grep "SPT=1013" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1013.txt
+grep "SPT=1014" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1014.txt
+grep "SPT=2345" reportByDay/Day23/Day23.txt > reportByDay/Day23/Day23_1015.txt
+
+wc -l reportByDay/Day23/Day23_21.txt >> report.txt
+wc -l reportByDay/Day23/Day23_3024.txt >> report.txt
+wc -l reportByDay/Day23/Day23_4092.txt >> report.txt
+wc -l reportByDay/Day23/Day23_5472.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1255.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1777.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1011.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1012.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1013.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1014.txt >> report.txt
+wc -l reportByDay/Day23/Day23_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_21.txt
+grep "SPT=3024" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_3024.txt
+grep "SPT=4092" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_4092.txt
+grep "SPT=5472" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_5472.txt
+grep "SPT=1255" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1255.txt
+grep "SPT=1777" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1777.txt
+grep "SPT=1011" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1011.txt
+grep "SPT=1012" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1012.txt
+grep "SPT=1013" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1013.txt
+grep "SPT=1014" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1014.txt
+grep "SPT=2345" reportByDay/Day24/Day24.txt > reportByDay/Day24/Day24_1015.txt
+
+wc -l reportByDay/Day24/Day24_21.txt >> report.txt
+wc -l reportByDay/Day24/Day24_3024.txt >> report.txt
+wc -l reportByDay/Day24/Day24_4092.txt >> report.txt
+wc -l reportByDay/Day24/Day24_5472.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1255.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1777.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1011.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1012.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1013.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1014.txt >> report.txt
+wc -l reportByDay/Day24/Day24_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_21.txt
+grep "SPT=3024" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_3024.txt
+grep "SPT=4092" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_4092.txt
+grep "SPT=5472" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_5472.txt
+grep "SPT=1255" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1255.txt
+grep "SPT=1777" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1777.txt
+grep "SPT=1011" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1011.txt
+grep "SPT=1012" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1012.txt
+grep "SPT=1013" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1013.txt
+grep "SPT=1014" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1014.txt
+grep "SPT=2345" reportByDay/Day25/Day25.txt > reportByDay/Day25/Day25_1015.txt
+
+wc -l reportByDay/Day25/Day25_21.txt >> report.txt
+wc -l reportByDay/Day25/Day25_3024.txt >> report.txt
+wc -l reportByDay/Day25/Day25_4092.txt >> report.txt
+wc -l reportByDay/Day25/Day25_5472.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1255.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1777.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1011.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1012.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1013.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1014.txt >> report.txt
+wc -l reportByDay/Day25/Day25_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_21.txt
+grep "SPT=3024" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_3024.txt
+grep "SPT=4092" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_4092.txt
+grep "SPT=5472" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_5472.txt
+grep "SPT=1255" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1255.txt
+grep "SPT=1777" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1777.txt
+grep "SPT=1011" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1011.txt
+grep "SPT=1012" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1012.txt
+grep "SPT=1013" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1013.txt
+grep "SPT=1014" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1014.txt
+grep "SPT=2345" reportByDay/Day26/Day26.txt > reportByDay/Day26/Day26_1015.txt
+
+wc -l reportByDay/Day26/Day26_21.txt >> report.txt
+wc -l reportByDay/Day26/Day26_3024.txt >> report.txt
+wc -l reportByDay/Day26/Day26_4092.txt >> report.txt
+wc -l reportByDay/Day26/Day26_5472.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1255.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1777.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1011.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1012.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1013.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1014.txt >> report.txt
+wc -l reportByDay/Day26/Day26_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_21.txt
+grep "SPT=3024" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_3024.txt
+grep "SPT=4092" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_4092.txt
+grep "SPT=5472" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_5472.txt
+grep "SPT=1255" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1255.txt
+grep "SPT=1777" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1777.txt
+grep "SPT=1011" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1011.txt
+grep "SPT=1012" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1012.txt
+grep "SPT=1013" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1013.txt
+grep "SPT=1014" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1014.txt
+grep "SPT=2345" reportByDay/Day27/Day27.txt > reportByDay/Day27/Day27_1015.txt
+
+wc -l reportByDay/Day27/Day27_21.txt >> report.txt
+wc -l reportByDay/Day27/Day27_3024.txt >> report.txt
+wc -l reportByDay/Day27/Day27_4092.txt >> report.txt
+wc -l reportByDay/Day27/Day27_5472.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1255.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1777.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1011.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1012.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1013.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1014.txt >> report.txt
+wc -l reportByDay/Day27/Day27_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_21.txt
+grep "SPT=3024" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_3024.txt
+grep "SPT=4092" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_4092.txt
+grep "SPT=5472" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_5472.txt
+grep "SPT=1255" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1255.txt
+grep "SPT=1777" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1777.txt
+grep "SPT=1011" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1011.txt
+grep "SPT=1012" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1012.txt
+grep "SPT=1013" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1013.txt
+grep "SPT=1014" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1014.txt
+grep "SPT=2345" reportByDay/Day28/Day28.txt > reportByDay/Day28/Day28_1015.txt
+
+wc -l reportByDay/Day28/Day28_21.txt >> report.txt
+wc -l reportByDay/Day28/Day28_3024.txt >> report.txt
+wc -l reportByDay/Day28/Day28_4092.txt >> report.txt
+wc -l reportByDay/Day28/Day28_5472.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1255.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1777.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1011.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1012.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1013.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1014.txt >> report.txt
+wc -l reportByDay/Day28/Day28_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_21.txt
+grep "SPT=3024" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_3024.txt
+grep "SPT=4092" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_4092.txt
+grep "SPT=5472" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_5472.txt
+grep "SPT=1255" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1255.txt
+grep "SPT=1777" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1777.txt
+grep "SPT=1011" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1011.txt
+grep "SPT=1012" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1012.txt
+grep "SPT=1013" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1013.txt
+grep "SPT=1014" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1014.txt
+grep "SPT=2345" reportByDay/Day29/Day29.txt > reportByDay/Day29/Day29_1015.txt
+
+wc -l reportByDay/Day29/Day29_21.txt >> report.txt
+wc -l reportByDay/Day29/Day29_3024.txt >> report.txt
+wc -l reportByDay/Day29/Day29_4092.txt >> report.txt
+wc -l reportByDay/Day29/Day29_5472.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1255.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1777.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1011.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1012.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1013.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1014.txt >> report.txt
+wc -l reportByDay/Day29/Day29_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_21.txt
+grep "SPT=3024" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_3024.txt
+grep "SPT=4092" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_4092.txt
+grep "SPT=5472" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_5472.txt
+grep "SPT=1255" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1255.txt
+grep "SPT=1777" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1777.txt
+grep "SPT=1011" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1011.txt
+grep "SPT=1012" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1012.txt
+grep "SPT=1013" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1013.txt
+grep "SPT=1014" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1014.txt
+grep "SPT=2345" reportByDay/Day30/Day30.txt > reportByDay/Day30/Day30_1015.txt
+
+wc -l reportByDay/Day30/Day30_21.txt >> report.txt
+wc -l reportByDay/Day30/Day30_3024.txt >> report.txt
+wc -l reportByDay/Day30/Day30_4092.txt >> report.txt
+wc -l reportByDay/Day30/Day30_5472.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1255.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1777.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1011.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1012.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1013.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1014.txt >> report.txt
+wc -l reportByDay/Day30/Day30_1015.txt >> report.txt
+
+grep "SPT=21" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_21.txt
+grep "SPT=3024" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_3024.txt
+grep "SPT=4092" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_4092.txt
+grep "SPT=5472" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_5472.txt
+grep "SPT=1255" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1255.txt
+grep "SPT=1777" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1777.txt
+grep "SPT=1011" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1011.txt
+grep "SPT=1012" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1012.txt
+grep "SPT=1013" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1013.txt
+grep "SPT=1014" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1014.txt
+grep "SPT=2345" reportByDay/Day31/Day31.txt > reportByDay/Day31/Day31_1015.txt
+
+wc -l reportByDay/Day31/Day31_21.txt >> report.txt
+wc -l reportByDay/Day31/Day31_3024.txt >> report.txt
+wc -l reportByDay/Day31/Day31_4092.txt >> report.txt
+wc -l reportByDay/Day31/Day31_5472.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1255.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1777.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1011.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1012.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1013.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1014.txt >> report.txt
+wc -l reportByDay/Day31/Day31_1015.txt >> report.txt
+
+#END

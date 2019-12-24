@@ -1,0 +1,51 @@
+.root {
+
+ -fx-font-family: "Goudy Old Style";//Brush Script MT
+ -fx-alignment: center;
+
+}
+
+.table {
+
+-fx-background-color: white;
+-fx-color: white;
+-fx-alignment: center;
+-fx-padding: 10 ;
+
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9{
+-fx-alignment: center;
+
+}
+
+.hbox {
+
+-fx-background-color: white;
+
+}
+
+/* -fx-background-radius: 5.0;
+     -fx-padding: 8;
+     -fx-border-color: #2e8b57;
+     -fx-border-width: 2px;
+     -fx-padding: 10;
+     -fx-spacing: 8;
+       -fx-background-color: white;
+        -fx-background-radius: 5.0;
+        -fx-background-insets: 0.0 5.0 0.0 5.0;
+        -fx-padding: 10;
+        -fx-hgap: 10;
+        -fx-vgap: 10;
+
+
+
+
+
+
+
+
+
+
+ */
+
